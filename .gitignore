@@ -17,7 +17,6 @@ user_functions.lua
 validate.lua
 version_history.txt
 beta_examples_and_information/*
-data/User/*
 data/instructions.txt
 libs/Mote-*
 libs/rev1/*
@@ -36,12 +35,15 @@ organizer-lib.lua
 
 # --- futuredriven: track my character GearSwap files ---
 # Unignore my gear files under data/ (override upstream patterns like *_Gear.lua)
-!data/**/**_Gear.lua
-!data/**/**_Crafting.lua
-!data/**/**-Items.lua
-!data/**/**-Globals.lua
+!data/**/*_Gear.lua
+!data/**/*_Crafting.lua
+!data/**/*-Items.lua
+!data/**/*-Globals.lua
 
 # If you keep personal stuff under these, unignore them too:
+!data/User/
 !data/User/**
+!data/common/
 !data/common/**
+!data/Extras/
 !data/Extras/**

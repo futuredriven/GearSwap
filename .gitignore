@@ -33,3 +33,15 @@ libs/closetCleaner.lua
 Rename.bat
 Modes.lua
 organizer-lib.lua
+
+# --- futuredriven: track my character GearSwap files ---
+# Unignore my gear files under data/ (override upstream patterns like *_Gear.lua)
+!data/**/**_Gear.lua
+!data/**/**_Crafting.lua
+!data/**/**-Items.lua
+!data/**/**-Globals.lua
+
+# If you keep personal stuff under these, unignore them too:
+!data/User/**
+!data/common/**
+!data/Extras/**

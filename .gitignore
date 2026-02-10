@@ -33,3 +33,11 @@ libs/closetCleaner.lua
 Rename.bat
 Modes.lua
 organizer-lib.lua
+
+# Allow tracking of my character data directories in this fork
+!data/Archiebald/**
+!data/Azacat/**
+!data/Edeline/**
+!data/Kaelia/**
+!data/Sensible/**
+!data/Tamlyn/**

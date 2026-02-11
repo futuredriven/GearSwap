@@ -75,13 +75,13 @@ function init_gear_sets()
 	--sets.weapons.Bow = {main="Aeneas",sub="Kustawi +1",range="Kaja Bow",ammo="Chapuli Arrow"}
 
     sets.precast.Step = {ammo="Yamarang",
-        head="Adhemar Bonnet +1",neck="Erudit. Necklace",left_ear="Cessance Earring",right_ear="Mache Earring +1",
-        body="Pillager's Vest +1",hands="Adhemar Wrist. +1",left_ring="Ramuh Ring +1",right_ring="Ramuh Ring +1",
+        head="Adhemar Bonnet +1",neck="Erudit. Necklace",ear1="Cessance Earring",ear2="Mache Earring +1",
+        body="Pillager's Vest +1",hands="Adhemar Wrist. +1",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
         back=gear.stp_jse_back,waist="Olseni Belt",legs="Samnuha Tights",feet="Nyame Sollerets"}
         
     sets.precast.JA['Violent Flourish'] = {ammo="Yamarang",
-        head="Adhemar Bonnet +1",neck="Erudit. Necklace",left_ear="Cessance Earring",right_ear="Mache Earring +1",
-        body="Pillager's Vest +1",hands="Adhemar Wrist. +1",left_ring="Ramuh Ring +1",right_ring="Ramuh Ring +1",
+        head="Adhemar Bonnet +1",neck="Erudit. Necklace",ear1="Cessance Earring",ear2="Mache Earring +1",
+        body="Pillager's Vest +1",hands="Adhemar Wrist. +1",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
         back=gear.stp_jse_back,waist="Olseni Belt",legs="Samnuha Tights",feet="Nyame Sollerets"}
         
     sets.precast.JA['Animated Flourish'] = sets.TreasureHunter
@@ -123,12 +123,12 @@ function init_gear_sets()
     -- WISHLIST
     -- head: Mummu Bonnet +2
     sets.precast.Waltz = {ammo="Yamarang",
-        neck="Unmoving Collar +1",left_ear="Enchntr. Earring +1",right_ear="Handler's Earring +1",
-        body="Passion Jacket",hands="Adhemar Wrist. +1",left_ring="Defending Ring",right_ring="Valseur's Ring",
+        neck="Unmoving Collar +1",ear1="Enchntr. Earring +1",ear2="Handler's Earring +1",
+        body="Passion Jacket",hands="Adhemar Wrist. +1",ring1="Defending Ring",ring2="Valseur's Ring",
         back="Moonbeam Cape",waist="Chaac Belt",legs="Samnuha Tights",feet="Nyame Sollerets"}
 
     -- WISHLIST
-    -- left_ring: Asklepian Ring
+    -- ring1: Asklepian Ring
     sets.Self_Waltz = {}
         
     -- Don't need any special gear for Healing Waltz.
@@ -137,10 +137,10 @@ function init_gear_sets()
 
     -- Fast cast sets for spells
     -- WISHLIST
-    -- left_ring: Lebeche Ring
+    -- ring1: Lebeche Ring
     sets.precast.FC = {ammo="Impatiens",
-        head=gear.herculean_fc_head,neck="Erudit. Necklace",left_ear="Enchntr. Earring +1",right_ear="Loquac. Earring",
-        body="Dread Jupon",hands="Leyline Gloves",right_ring="Prolix Ring"}
+        head=gear.herculean_fc_head,neck="Erudit. Necklace",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
+        body="Dread Jupon",hands="Leyline Gloves",ring2="Prolix Ring"}
 
     -- WISHLIST
     -- neck: Magoraga Beads
@@ -158,13 +158,13 @@ function init_gear_sets()
     -- body: Skulker's Vest +3
     -- head: Pill. Bonnet +4
     -- legs: Plun. Culottes +4
-    -- right_ear: Odr Earring
+    -- ear2: Odr Earring
     sets.precast.WS = {ammo="Coiste Bodhar",
-        head="Pill. Bonnet +1",neck="Caro Necklace",left_ear="Moonshade Earring",right_ear="Sherida Earring",
-        body=gear.herculean_ws_body,hands="Meg. Gloves +2",left_ring="Ilabrat Ring",right_ring="Regal Ring",
+        head="Pill. Bonnet +1",neck="Caro Necklace",ear1="Moonshade Earring",ear2="Sherida Earring",
+        body=gear.herculean_ws_body,hands="Meg. Gloves +2",ring1="Ilabrat Ring",ring2="Regal Ring",
         back=gear.wsd_jse_back,waist="Sailfi Belt +1",legs="Lustr. Subligar +1",feet="Lustra. Leggings +1"}
         
-    sets.precast.WS.Acc = set_combine(sets.precast.WS, {neck="Combatant's Torque",left_ear="Mache Earring +1",body="Meg. Cuirie +2",waist="Olseni Belt",legs="Meg. Chausses +2"})
+    sets.precast.WS.Acc = set_combine(sets.precast.WS, {neck="Combatant's Torque",ear1="Mache Earring +1",body="Meg. Cuirie +2",waist="Olseni Belt",legs="Meg. Chausses +2"})
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
     -- WISHLIST
@@ -184,10 +184,10 @@ function init_gear_sets()
     -- feet: Gleti's Boots
     -- head: Blistering Sallet +1
     -- head: Mummu Bonnet +2
-    -- left_ring: Begrudging Ring
+    -- ring1: Begrudging Ring
     -- legs: Gleti's Breeches
     -- legs: Skulk. Culottes +3
-    -- right_ear: Odr Earring
+    -- ear2: Odr Earring
     sets.precast.WS["Evisceration"] = set_combine(sets.precast.WS, {ammo="Yetshila +1",head="Adhemar Bonnet +1",neck="Fotia Gorget",hands="Mummu Wrists +2",waist="Fotia Belt",legs="Pill. Culottes +1",feet="Mummu Gamash. +2"}) -- body="Abnoba Kaftan",
     sets.precast.WS["Evisceration"].Acc = set_combine(sets.precast.WS.Acc, {ammo="Yetshila +1",neck="Fotia Gorget",hands="Mummu Wrists +2",waist="Fotia Belt",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"}) -- body="Sayadio's Kaftan",
 
@@ -198,26 +198,26 @@ function init_gear_sets()
         
     -- WISHLIST
     -- ammo: Ghastly Tathlum +1
-    -- left_ring: Shiva Ring +1
+    -- ring1: Shiva Ring +1
     sets.precast.WS['Aeolian Edge'] = {ammo="Seeth. Bomblet +1",
-        head="Nyame Helm",neck="Sanctity Necklace",left_ear="Moonshade Earring",right_ear="Friomisi Earring",
-        body="Nyame Mail",hands="Nyame Gauntlets",right_ring="Dingir Ring",
+        head="Nyame Helm",neck="Sanctity Necklace",ear1="Moonshade Earring",ear2="Friomisi Earring",
+        body="Nyame Mail",hands="Nyame Gauntlets",ring2="Dingir Ring",
         back=gear.wsd_jse_back,waist="Chaac Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
     sets.precast.WS['Aeolian Edge'].TH = set_combine(sets.precast.WS['Aeolian Edge'], sets.TreasureHunter)
 
     -- Swap to these on Moonshade using WS if at 3000 TP
-    sets.MaxTP = {left_ear="Ishvara Earring",right_ear="Sherida Earring"}
-    sets.AccMaxTP = {left_ear="Mache Earring +1",right_ear="Sherida Earring"}
+    sets.MaxTP = {ear1="Ishvara Earring",ear2="Sherida Earring"}
+    sets.AccMaxTP = {ear1="Mache Earring +1",ear2="Sherida Earring"}
 
     --------------------------------------
     -- Midcast sets
     --------------------------------------
 
     -- WISHLIST
-    -- left_ring: Lebeche Ring
+    -- ring1: Lebeche Ring
     sets.midcast.FastRecast = {ammo="Impatiens",
-        head=gear.herculean_fc_head,neck="Erudit. Necklace",left_ear="Enchntr. Earring +1",right_ear="Loquac. Earring",
-        body="Dread Jupon",hands="Leyline Gloves",right_ring="Prolix Ring"}
+        head=gear.herculean_fc_head,neck="Erudit. Necklace",ear1="Enchntr. Earring +1",ear2="Loquac. Earring",
+        body="Dread Jupon",hands="Leyline Gloves",ring2="Prolix Ring"}
 
     -- Specific spells
     sets.midcast.Utsusemi = set_combine(sets.midcast.FastRecast, {})
@@ -242,13 +242,13 @@ function init_gear_sets()
     sets.resting = {}
 
     sets.HPDown = {ammo="Staunch Tathlum +1",
-        head="Nyame Helm",neck="Loricate Torque +1",left_ear="Etiolation Earring",right_ear="Genmei Earring",
-        body=empty,hands=empty,left_ring="Kunaji Ring",right_ring="Gelatinous Ring +1",
+        head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Genmei Earring",
+        body=empty,hands=empty,ring1="Kunaji Ring",ring2="Gelatinous Ring +1",
         back="Moonbeam Cape",waist="Olseni Belt",legs=empty,feet=empty}
     
     sets.HPMax = {ammo="Staunch Tathlum +1",
-        head="Nyame Helm",neck="Loricate Torque +1",left_ear="Etiolation Earring",right_ear="Odnowa Earring +1",
-        body="Nyame Mail",hands="Nyame Gauntlets",left_ring="Kunaji Ring",right_ring="Gelatinous Ring +1",
+        head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
+        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Kunaji Ring",ring2="Gelatinous Ring +1",
         back="Moonbeam Cape",waist="Reiki Yotai",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
@@ -261,13 +261,13 @@ function init_gear_sets()
     -- head: Gleti's Mask
     -- legs: Gleti's Breeches
     sets.idle = {ammo="Staunch Tathlum +1",
-        head="Adhemar Bonnet +1",neck="Loricate Torque +1",left_ear="Etiolation Earring",right_ear="Odnowa Earring +1",
-        body="Meg. Cuirie +2",hands="Adhemar Wrist. +1",left_ring="Defending Ring",right_ring="Gelatinous Ring +1",
+        head="Adhemar Bonnet +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
+        body="Meg. Cuirie +2",hands="Adhemar Wrist. +1",ring1="Defending Ring",ring2="Gelatinous Ring +1",
         back=gear.stp_jse_back,waist="Reiki Yotai",legs="Meg. Chausses +2",feet="Nyame Sollerets"}
         
     sets.idle.Refresh = {ammo="Staunch Tathlum +1",
-        head="Adhemar Bonnet +1",neck="Loricate Torque +1",left_ear="Etiolation Earring",right_ear="Sanare Earring",
-        body="Nyame Mail",left_ring="Stikini Ring +1",right_ring="Stikini Ring +1",
+        head="Adhemar Bonnet +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
+        body="Nyame Mail",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
         back="Moonbeam Cape",waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
         
     sets.idle.Sphere = set_combine(sets.idle, {})
@@ -277,21 +277,21 @@ function init_gear_sets()
     -- Defense sets
 
     sets.defense.PDT = {ammo="Staunch Tathlum +1",
-        head="Adhemar Bonnet +1",neck="Loricate Torque +1",left_ear="Etiolation Earring",right_ear="Odnowa Earring +1",
-        body="Meg. Cuirie +2",hands="Adhemar Wrist. +1",left_ring="Defending Ring",right_ring="Gelatinous Ring +1",
+        head="Adhemar Bonnet +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
+        body="Meg. Cuirie +2",hands="Adhemar Wrist. +1",ring1="Defending Ring",ring2="Gelatinous Ring +1",
         back=gear.stp_jse_back,waist="Reiki Yotai",legs="Meg. Chausses +2",feet="Nyame Sollerets"}
 
     -- WISHLIST
     -- hands: Malignance Gloves
-    -- right_ring: Shadow Ring
+    -- ring2: Shadow Ring
     sets.defense.MDT = {ammo="Staunch Tathlum +1",
-        head="Adhemar Bonnet +1",neck="Loricate Torque +1",left_ear="Etiolation Earring",right_ear="Odnowa Earring +1",
-        body="Meg. Cuirie +2",left_ring="Defending Ring",
+        head="Adhemar Bonnet +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
+        body="Meg. Cuirie +2",ring1="Defending Ring",
         back=gear.stp_jse_back,waist="Engraved Belt",legs="Meg. Chausses +2",feet="Nyame Sollerets"}
         
     sets.defense.MEVA = {ammo="Staunch Tathlum +1",
-        head=gear.herculean_fc_head,neck="Warder's Charm +1",left_ear="Etiolation Earring",right_ear="Odnowa Earring +1",
-        body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",left_ring="Vengeful Ring",right_ring="Purity Ring",
+        head=gear.herculean_fc_head,neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Odnowa Earring +1",
+        body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Vengeful Ring",ring2="Purity Ring",
         back=gear.stp_jse_back,waist="Engraved Belt",legs="Meg. Chausses +2",feet="Nyame Sollerets"}
 
 
@@ -305,17 +305,17 @@ function init_gear_sets()
     -- feet: Skulk. Poulaines +3
     -- hands: Malignance Gloves
     -- head: Skulker's Bonnet +3
-    -- left_ear: Skulk. Earring +1
+    -- ear1: Skulk. Earring +1
     -- legs: Gleti's Breeches
     -- neck: Asn. Gorget +2
     sets.engaged = {ammo="Ginsen",
-        head="Adhemar Bonnet +1",neck="Erudit. Necklace",left_ear="Dedition Earring",right_ear="Sherida Earring",
-        body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",left_ring="Gere Ring",right_ring="Moonlight Ring",
+        head="Adhemar Bonnet +1",neck="Erudit. Necklace",ear1="Dedition Earring",ear2="Sherida Earring",
+        body="Adhemar Jacket +1",hands="Adhemar Wrist. +1",ring1="Gere Ring",ring2="Moonlight Ring",
         back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Nyame Sollerets"}
         
     sets.engaged.Acc = {ammo="Yamarang",
-        head="Pill. Bonnet +1",neck="Combatant's Torque",left_ear="Telos Earring",right_ear="Sherida Earring",
-        body="Pillager's Vest +1",hands="Adhemar Wrist. +1",left_ring="Ilabrat Ring",right_ring="Chirich Ring +1",
+        head="Pill. Bonnet +1",neck="Combatant's Torque",ear1="Telos Earring",ear2="Sherida Earring",
+        body="Pillager's Vest +1",hands="Adhemar Wrist. +1",ring1="Ilabrat Ring",ring2="Chirich Ring +1",
         back=gear.stp_jse_back,waist="Olseni Belt",legs="Pill. Culottes +1",feet=gear.herculean_ta_acc_feet}
     
 
@@ -327,8 +327,8 @@ function init_gear_sets()
     -- head: Skulker's Bonnet +3
     -- legs: Gleti's Breeches
     sets.engaged.DT = {
-        head="Adhemar Bonnet +1",neck="Loricate Torque +1",left_ear="Telos Earring",right_ear="Sherida Earring",
-        body="Meg. Cuirie +2",hands="Adhemar Wrist. +1",left_ring="Defending Ring",right_ring="Moonlight Ring",
+        head="Adhemar Bonnet +1",neck="Loricate Torque +1",ear1="Telos Earring",ear2="Sherida Earring",
+        body="Meg. Cuirie +2",hands="Adhemar Wrist. +1",ring1="Defending Ring",ring2="Moonlight Ring",
         back=gear.stp_jse_back,waist="Reiki Yotai",legs="Meg. Chausses +2",feet="Nyame Sollerets"}
 
     -- WISHLIST
@@ -337,10 +337,10 @@ function init_gear_sets()
     -- hands: Malignance Gloves
     -- head: Skulker's Bonnet +3
     -- legs: Gleti's Breeches
-    -- right_ear: Odr Earring
+    -- ear2: Odr Earring
     sets.engaged.Acc.DT = {ammo="Staunch Tathlum +1",
-        head="Adhemar Bonnet +1",neck="Loricate Torque +1",left_ear="Telos Earring",
-        body="Meg. Cuirie +2",hands="Adhemar Wrist. +1",left_ring="Defending Ring",right_ring="Moonlight Ring",
+        head="Adhemar Bonnet +1",neck="Loricate Torque +1",ear1="Telos Earring",
+        body="Meg. Cuirie +2",hands="Adhemar Wrist. +1",ring1="Defending Ring",ring2="Moonlight Ring",
         back=gear.stp_jse_back,waist="Reiki Yotai",legs="Meg. Chausses +2",feet="Nyame Sollerets"}
 end
 

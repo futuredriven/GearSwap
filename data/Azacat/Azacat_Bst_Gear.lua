@@ -83,15 +83,15 @@ function init_gear_sets()
     sets.SpurAxesDW = {}
 
     sets.precast.JA['Feral Howl'] = {range="Ullr",ammo=empty,
-        head="Nyame Helm",neck="Bst. Collar +2",left_ear="Digni. Earring",
-        body=gear.relic_body,hands="Nyame Gauntlets",left_ring="Stikini Ring +1",right_ring="Stikini Ring +1",
+        head="Nyame Helm",neck="Bst. Collar +2",ear1="Digni. Earring",
+        body=gear.relic_body,hands="Nyame Gauntlets",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
         back=gear.chr_jse_back,waist="Eschan Stone",legs=gear.relic_legs,feet=gear.relic_feet}
 
     -- MISSING: neck Aife's Medal
     -- MISSING: waist Engraved Belt
     sets.precast.JA.Reward = {
-        head="Stout Bonnet",left_ear="Etiolation Earring",right_ear="Lifestorm Earring", --Pratik Earring
-        body=gear.relic_body,hands="Malignance Gloves",left_ring="Stikini Ring +1",right_ring="Stikini Ring +1",
+        head="Stout Bonnet",ear1="Etiolation Earring",ear2="Lifestorm Earring", --Pratik Earring
+        body=gear.relic_body,hands="Malignance Gloves",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
         back=gear.chr_jse_back,legs=gear.relic_legs,feet=gear.relic_feet}
 
     sets.precast.JA.Reward.DW = {}
@@ -101,10 +101,10 @@ function init_gear_sets()
     sets.precast.JA.Reward.Eta = set_combine(sets.precast.JA.Reward, {ammo="Pet Food Eta"})
     
 
-    -- MISSING: right_ear Crep. Earring 
+    -- MISSING: ear2 Crep. Earring 
     sets.precast.JA.Charm = {
-        head=gear.artifact_head,neck="Bst. Collar +2",left_ear="Digni. Earring",
-        body=gear.relic_body,hands=gear.relic_hands,left_ring="Stikini Ring +1",right_ring="Stikini Ring +1",
+        head=gear.artifact_head,neck="Bst. Collar +2",ear1="Digni. Earring",
+        body=gear.relic_body,hands=gear.relic_hands,ring1="Stikini Ring +1",ring2="Stikini Ring +1",
         back=gear.chr_jse_back,waist="Eschan Stone",legs=gear.relic_legs,feet=gear.relic_feet}
 
     -- CURING WALTZ
@@ -122,16 +122,16 @@ function init_gear_sets()
 
     -- MISSING: body Sacro Breastplate
     sets.precast.FC = {ammo="Impatiens",
-        neck="Voltsurge Torque",right_ear="Loquac. Earring",
-        hands="Leyline Gloves",left_ring="Kishar Ring",right_ring="Prolix Ring"}
+        neck="Voltsurge Torque",ear2="Loquac. Earring",
+        hands="Leyline Gloves",ring1="Kishar Ring",ring2="Prolix Ring"}
         
     sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {})
     -- MISSING: neck Magoraga Beads
 
         -- MIDCAST SETS
     sets.midcast.FastRecast = {ammo="Impatiens",
-        neck="Voltsurge Torque",right_ear="Loquac. Earring",
-        hands="Leyline Gloves",left_ring="Kishar Ring",right_ring="Prolix Ring"}
+        neck="Voltsurge Torque",ear2="Loquac. Earring",
+        hands="Leyline Gloves",ring1="Kishar Ring",ring2="Prolix Ring"}
     -- MISSING: body Sacro Breastplate
 
     sets.midcast.Utsusemi = set_combine(sets.midcast.FastRecast, {})
@@ -141,18 +141,18 @@ function init_gear_sets()
 
     sets.midcast.Curaga = sets.midcast.Cure
 
-    sets.Self_Healing = {hands="Buremte Gloves",right_ring="Kunaji Ring",waist="Gishdubar Sash"}
-    sets.Cure_Received = {hands="Buremte Gloves",right_ring="Kunaji Ring",waist="Gishdubar Sash"}
+    sets.Self_Healing = {hands="Buremte Gloves",ring2="Kunaji Ring",waist="Gishdubar Sash"}
+    sets.Cure_Received = {hands="Buremte Gloves",ring2="Kunaji Ring",waist="Gishdubar Sash"}
     sets.Self_Refresh = {waist="Gishdubar Sash"}
 
     sets.midcast.Stoneskin = sets.midcast.FastRecast
 
-    sets.midcast.Cursna = set_combine(sets.midcast.FastRecast, {neck="Debilis Medallion",left_ring="Haoma's Ring",right_ring="Menelaus's Ring"})
+    sets.midcast.Cursna = set_combine(sets.midcast.FastRecast, {neck="Debilis Medallion",ring1="Haoma's Ring",ring2="Menelaus's Ring"})
 
-    sets.midcast.Protect = set_combine(sets.midcast.FastRecast, {right_ring="Sheltered Ring"})
+    sets.midcast.Protect = set_combine(sets.midcast.FastRecast, {ring2="Sheltered Ring"})
     sets.midcast.Protectra = sets.midcast.Protect
 
-    sets.midcast.Shell = set_combine(sets.midcast.FastRecast, {right_ring="Sheltered Ring"})
+    sets.midcast.Shell = set_combine(sets.midcast.FastRecast, {ring2="Sheltered Ring"})
     sets.midcast.Shellra = sets.midcast.Shell
 
     sets.midcast['Enfeebling Magic'] = sets.midcast.FastRecast
@@ -165,38 +165,38 @@ function init_gear_sets()
         -- WEAPONSKILLS
         -- Default weaponskill sets.
     sets.precast.WS = {
-        head="Gleti's Mask",neck="Combatant's Torque",left_ear="Moonshade Earring",right_ear="Sherida Earring",
-        body="Gleti's Cuirass",hands="Gleti's Gauntlets",left_ring="Ifrit Ring +1",right_ring="Ifrit Ring +1",
+        head="Gleti's Mask",neck="Combatant's Torque",ear1="Moonshade Earring",ear2="Sherida Earring",
+        body="Gleti's Cuirass",hands="Gleti's Gauntlets",ring1="Ifrit Ring +1",ring2="Ifrit Ring +1",
         waist="Fotia Belt",legs="Gleti's Breeches",feet="Gleti's boots"}
     -- MISSING: ammo Voluspa Tathlum
     -- MISSING: back Bleating Mantle
 
     sets.precast.WS.Acc = {
-        head=gear.valorous_pet_head,neck="Combatant's Torque",left_ear="Brutal Earring",right_ear="Sherida Earring",
-        body="Malignance Tabard",hands="Leyline Gloves",right_ring="Ilabrat Ring",
+        head=gear.valorous_pet_head,neck="Combatant's Torque",ear1="Brutal Earring",ear2="Sherida Earring",
+        body="Malignance Tabard",hands="Leyline Gloves",ring2="Ilabrat Ring",
         legs="Malignance Tights",feet="Malignance Boots"}
     -- MISSING: ammo Voluspa Tathlum
-    -- MISSING: left_ring Regal Ring
+    -- MISSING: ring1 Regal Ring
     -- MISSING: back Letalis Mantle
     -- MISSING: waist Olseni Belt
     -- MISSING: legs Meg. Chausses +2
     -- MISSING: feet Nukumi Ocreae +1
 
         -- Swap to these on Moonshade using WS if at 3000 TP
-    sets.MaxTP = {left_ear="Brutal Earring",right_ear="Sherida Earring",}
-    sets.AccMaxTP = {right_ear="Telos Earring"}
-    -- MISSING: left_ear Mache Earring +1
+    sets.MaxTP = {ear1="Brutal Earring",ear2="Sherida Earring",}
+    sets.AccMaxTP = {ear2="Telos Earring"}
+    -- MISSING: ear1 Mache Earring +1
 
                 -- PET SIC & READY MOVES
     sets.midcast.Pet.WS = {main=gear.PHYKumbha1,sub=gear.PHYKumbha2,
-        neck="Shulmanu Collar",left_ear="Enmerkar Earring",
-        body=gear.taeon_pet_body,left_ring="Varar Ring +1",
+        neck="Shulmanu Collar",ear1="Enmerkar Earring",
+        body=gear.taeon_pet_body,ring1="Varar Ring +1",
         back="Artio's Mantle",waist="Incarnation Sash",legs=gear.valorous_physical_pet_legs}
     -- MISSING: ammo Voluspa Tathlum
     -- MISSING: head Totemic Helm +1
-    -- MISSING: right_ear Domesticator's Earring
+    -- MISSING: ear2 Domesticator's Earring
     -- MISSING: hands Nukumi Manoplas +1
-    -- MISSING: right_ring C. Palug Ring
+    -- MISSING: ring2 C. Palug Ring
     -- MISSING: feet Totemic Gaiters +1
 
     sets.midcast.Pet.Acc = set_combine(sets.midcast.Pet.WS, {})
@@ -206,25 +206,25 @@ function init_gear_sets()
     -- MISSING: hands Regimen Mittens
                 
     sets.midcast.Pet.MagicReady = {
-        head="Gleti's Mask",neck="Adad Amulet",left_ear="Enmerkar Earring",
-        body="Gleti's Cuirass",hands="Gleti's Gauntlets",left_ring="Varar Ring +1",right_ring="Varar Ring +1",
+        head="Gleti's Mask",neck="Adad Amulet",ear1="Enmerkar Earring",
+        body="Gleti's Cuirass",hands="Gleti's Gauntlets",ring1="Varar Ring +1",ring2="Varar Ring +1",
         back=gear.chr_jse_back,waist="Klouskap Sash +1",legs="Gleti's Breeches",feet="Gleti's Boots"}
     -- MISSING: ammo Voluspa Tathlum
-    -- MISSING: right_ear Domesticator's Earring
+    -- MISSING: ear2 Domesticator's Earring
         
     sets.midcast.Pet.DebuffReady = {
-        head="Gleti's Mask",neck="Adad Amulet",left_ear="Enmerkar Earring",
-        body="Gleti's Cuirass",hands="Gleti's Gauntlets",left_ring="Varar Ring +1",right_ring="Varar Ring +1",
+        head="Gleti's Mask",neck="Adad Amulet",ear1="Enmerkar Earring",
+        body="Gleti's Cuirass",hands="Gleti's Gauntlets",ring1="Varar Ring +1",ring2="Varar Ring +1",
         back=gear.chr_jse_back,waist="Klouskap Sash +1",legs="Gleti's Breeches",feet="Gleti's Boots"}
     -- MISSING: ammo Voluspa Tathlum
-    -- MISSING: right_ear Crep. Earring
+    -- MISSING: ear2 Crep. Earring
         
     sets.midcast.Pet.PhysicalDebuffReady = {
-        head=gear.valorous_pet_head,neck="Adad Amulet",left_ear="Enmerkar Earring",
-        body=gear.valorous_pet_body,left_ring="Varar Ring +1",right_ring="Varar Ring +1",
+        head=gear.valorous_pet_head,neck="Adad Amulet",ear1="Enmerkar Earring",
+        body=gear.valorous_pet_body,ring1="Varar Ring +1",ring2="Varar Ring +1",
         back="Artio's Mantle",waist="Klouskap Sash +1",legs=gear.valorous_magical_pet_legs,feet=gear.valorous_magical_pet_feet}
     -- MISSING: ammo Voluspa Tathlum
-    -- MISSING: right_ear Domesticator's Earring
+    -- MISSING: ear2 Domesticator's Earring
     -- MISSING: hands Nukumi Manoplas +1
 
     sets.midcast.Pet.ReadyRecast = {legs="Gleti's Breeches"}
@@ -242,17 +242,17 @@ function init_gear_sets()
     sets.resting = {}
 
     sets.idle = {ammo="Staunch Tathlum +1",
-        head="Gleti's Mask",neck="Loricate Torque +1",left_ear="Eabani Earring",right_ear="Etiolation Earring",
-        body="Gleti's Cuirass",hands="Gleti's Gauntlets",left_ring="Defending Ring",right_ring="Karieyh Ring",
+        head="Gleti's Mask",neck="Loricate Torque +1",ear1="Eabani Earring",ear2="Etiolation Earring",
+        body="Gleti's Cuirass",hands="Gleti's Gauntlets",ring1="Defending Ring",ring2="Karieyh Ring",
         back=gear.stp_jse_back,waist="Flume Belt +1",legs="Gleti's Breeches",feet="Gleti's Boots"}
         
     sets.idle.Refresh = {sub=gear.PDTMABKumbha,ammo="Staunch Tathlum +1",
-        head="Jumalik Helm",neck="Loricate Torque +1",left_ear="Sanare Earring",right_ear="Genmei Earring",
-        left_ring="Defending Ring",waist="Flume Belt +1"}
+        head="Jumalik Helm",neck="Loricate Torque +1",ear1="Sanare Earring",ear2="Genmei Earring",
+        ring1="Defending Ring",waist="Flume Belt +1"}
     -- MISSING: main Izizoeksi
     -- MISSING: body Jumalik Mail
     -- MISSING: hands Macabre Gaunt. +1
-    -- MISSING: right_ring C. Palug Ring
+    -- MISSING: ring2 C. Palug Ring
     -- MISSING: back Solemnity Cape
     -- MISSING: legs Tali'ah Sera. +2
     -- MISSING: feet Skd. Jambeaux +1
@@ -262,15 +262,15 @@ function init_gear_sets()
     -- MISSING: body Twilight Mail
 
     sets.idle.Pet = {sub=gear.PDTMABKumbha,
-        neck="Loricate Torque +1",left_ear="Enmerkar Earring",right_ear="Handler's Earring +1",
-        left_ring="Defending Ring",
+        neck="Loricate Torque +1",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
+        ring1="Defending Ring",
         back="Artio's Mantle"}
     -- MISSING: main Izizoeksi
     -- MISSING: ammo Voluspa Tathlum
     -- MISSING: head Anwig Salade
     -- MISSING: body Tot. Jackcoat +3
     -- MISSING: hands Ankusa Gloves +1
-    -- MISSING: right_ring C. Palug Ring
+    -- MISSING: ring2 C. Palug Ring
     -- MISSING: waist Isa Belt
     -- MISSING: legs Tali'ah Sera. +2
     -- MISSING: feet Ankusa Gaiters +3
@@ -279,62 +279,62 @@ function init_gear_sets()
     -- MISSING: main Izizoeksi
 
     sets.idle.Pet.Engaged = {sub=gear.PDTMABKumbha,
-        neck="Shulmanu Collar",left_ear="Enmerkar Earring",right_ear="Handler's Earring +1",hands="Gleti's Gauntlets",left_ring="Defending Ring",
+        neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="Handler's Earring +1",hands="Gleti's Gauntlets",ring1="Defending Ring",
         back="Artio's Mantle"}
     -- MISSING: main Izizoeksi
     -- MISSING: ammo Voluspa Tathlum
     -- MISSING: head Anwig Salade
     -- MISSING: body Tot. Jackcoat +3
-    -- MISSING: right_ring C. Palug Ring
+    -- MISSING: ring2 C. Palug Ring
     -- MISSING: waist Isa Belt
     -- MISSING: legs Tali'ah Sera. +2
     -- MISSING: feet Ankusa Gaiters +3
 
     sets.idle.Pet.Engaged.DW = {sub=gear.PDTMABKumbha,
-        neck="Shulmanu Collar",left_ear="Enmerkar Earring",right_ear="Handler's Earring +1",left_ring="Defending Ring",
+        neck="Shulmanu Collar",ear1="Enmerkar Earring",ear2="Handler's Earring +1",ring1="Defending Ring",
         back="Artio's Mantle"}
     -- MISSING: main Izizoeksi
     -- MISSING: ammo Voluspa Tathlum
     -- MISSING: head Anwig Salade
     -- MISSING: body Tot. Jackcoat +3
     -- MISSING: hands Ankusa Gloves +1
-    -- MISSING: right_ring C. Palug Ring
+    -- MISSING: ring2 C. Palug Ring
     -- MISSING: waist Isa Belt
     -- MISSING: legs Tali'ah Sera. +2
     -- MISSING: feet Ankusa Gaiters +3
 
     -- DEFENSE SETS
     sets.defense.PDT = {ammo="Staunch Tathlum +1",
-        head="Nyame Helm",neck="Loricate Torque +1",left_ear="Sanare Earring",right_ear="Handler's Earring +1",
-        left_ring="Defending Ring",waist="Flume Belt +1"}
+        head="Nyame Helm",neck="Loricate Torque +1",ear1="Sanare Earring",ear2="Handler's Earring +1",
+        ring1="Defending Ring",waist="Flume Belt +1"}
     -- MISSING: body Jumalik Mail
     -- MISSING: hands Macabre Gaunt. +1
-    -- MISSING: right_ring C. Palug Ring
+    -- MISSING: ring2 C. Palug Ring
     -- MISSING: back Moonlight Cape
     -- MISSING: legs Tali'ah Sera. +2
     -- MISSING: feet Nukumi Ocreae +1
 
     sets.defense.PetPDT = {
-        neck="Loricate Torque +1",left_ear="Enmerkar Earring",right_ear="Handler's Earring +1",
-        left_ring="Defending Ring"}
+        neck="Loricate Torque +1",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
+        ring1="Defending Ring"}
     -- MISSING: ammo Voluspa Tathlum
     -- MISSING: head Anwig Salade
     -- MISSING: body Tot. Jackcoat +3
     -- MISSING: hands Ankusa Gloves +1
-    -- MISSING: right_ring C. Palug Ring
+    -- MISSING: ring2 C. Palug Ring
     -- MISSING: back Pastoralist's Mantle
     -- MISSING: waist Isa Belt
     -- MISSING: legs Tali'ah Sera. +2
     -- MISSING: feet Ankusa Gaiters +3
 
     sets.defense.PetMDT = {
-        neck="Loricate Torque +1",left_ear="Enmerkar Earring",right_ear="Handler's Earring +1",
-        left_ring="Defending Ring"}
+        neck="Loricate Torque +1",ear1="Enmerkar Earring",ear2="Handler's Earring +1",
+        ring1="Defending Ring"}
     -- MISSING: ammo Voluspa Tathlum
     -- MISSING: head Anwig Salade
     -- MISSING: body Tot. Jackcoat +3
     -- MISSING: hands Ankusa Gloves +1
-    -- MISSING: right_ring C. Palug Ring
+    -- MISSING: ring2 C. Palug Ring
     -- MISSING: back Pastoralist's Mantle
     -- MISSING: waist Isa Belt
     -- MISSING: legs Tali'ah Sera. +2
@@ -349,12 +349,12 @@ function init_gear_sets()
     -- MISSING: body Twilight Mail
 
     sets.defense.MDT = {ammo="Staunch Tathlum +1",
-        head="Nyame Helm",left_ear="Sanare Earring",right_ear="Etiolation Earring",
-        left_ring="Defending Ring"}
+        head="Nyame Helm",ear1="Sanare Earring",ear2="Etiolation Earring",
+        ring1="Defending Ring"}
     -- MISSING: neck Warder's Charm +1
     -- MISSING: body Jumalik Mail
     -- MISSING: hands Macabre Gaunt. +1
-    -- MISSING: right_ring Shadow Ring
+    -- MISSING: ring2 Shadow Ring
     -- MISSING: back Engulfer Cape +1
     -- MISSING: waist Engraved Belt
     -- MISSING: legs Tali'ah Sera. +2
@@ -364,13 +364,13 @@ function init_gear_sets()
     -- MISSING: body Nukumi Gausape +1
 
     sets.defense.MEVA = {
-        hands="Leyline Gloves",right_ring="Purity Ring"}
+        hands="Leyline Gloves",ring2="Purity Ring"}
     -- MISSING: head Gavialis Helm
     -- MISSING: neck Warder's Charm +1
-    -- MISSING: left_ear Sanare Earring
-    -- MISSING: right_ear Etiolation Earring
+    -- MISSING: ear1 Sanare Earring
+    -- MISSING: ear2 Etiolation Earring
     -- MISSING: body Jumalik Mail
-    -- MISSING: left_ring Vengeful Ring
+    -- MISSING: ring1 Vengeful Ring
     -- MISSING: back Toro Cape
     -- MISSING: waist Engraved Belt
     -- MISSING: legs Flamma Dirs +2
@@ -382,60 +382,60 @@ function init_gear_sets()
 
     -- MELEE (SINGLE-WIELD) SETS
     sets.engaged = {ammo="Ginsen",
-        head=gear.taeon_head_tp,neck="Anu Torque",left_ear="Eabani Earring",right_ear="Sherida Earring",
-        body="Malignance Tabard",hands="Malignance Gloves",left_ring="Chirich Ring +1",right_ring="Chirich Ring +1",
+        head=gear.taeon_head_tp,neck="Anu Torque",ear1="Eabani Earring",ear2="Sherida Earring",
+        body="Malignance Tabard",hands="Malignance Gloves",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
         back=gear.stp_jse_back,waist="Kentarch Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.engaged.Acc = {ammo="Falcon Eye",
-        neck="Combatant's Torque",left_ear="Brutal Earring",
-        body="Malignance Tabard",hands="Malignance Gloves",right_ring="Epona's Ring",
+        neck="Combatant's Torque",ear1="Brutal Earring",
+        body="Malignance Tabard",hands="Malignance Gloves",ring2="Epona's Ring",
         legs="Malignance Tights",feet="Malignance Boots"}
     -- MISSING: head Malignance Chapeau
-    -- MISSING: left_ear Mache Earring +1
-    -- MISSING: left_ring Ramuh Ring +1
+    -- MISSING: ear1 Mache Earring +1
+    -- MISSING: ring1 Ramuh Ring +1
     -- MISSING: back Letalis Mantle
     -- MISSING: waist Olseni Belt
 
     -- MELEE (SINGLE-WIELD) HYBRID SETS
     sets.engaged.DT = {ammo="Staunch Tathlum +1",
-        head="Nyame Helm",neck="Loricate Torque +1",left_ear="Brutal Earring",right_ear="Sherida Earring",
-        body="Jumalik Mail",hands="Buremte Gloves",left_ring="Defending Ring",waist="Flume Belt +1"}
-    -- MISSING: right_ring Dark Ring
+        head="Nyame Helm",neck="Loricate Torque +1",ear1="Brutal Earring",ear2="Sherida Earring",
+        body="Jumalik Mail",hands="Buremte Gloves",ring1="Defending Ring",waist="Flume Belt +1"}
+    -- MISSING: ring2 Dark Ring
     -- MISSING: back Moonlight Cape
     -- MISSING: legs Meg. Chausses +2
     -- MISSING: feet Valorous Greaves
 
     sets.engaged.Acc.DT = {ammo="Falcon Eye",
-        head=gear.valorous_wsd_head,neck="Loricate Torque +1",left_ear="Brutal Earring",right_ear="Sherida Earring",
-        body="Jumalik Mail",hands="Buremte Gloves",left_ring="Defending Ring",waist="Flume Belt +1"}
-    -- MISSING: right_ring Dark Ring
+        head=gear.valorous_wsd_head,neck="Loricate Torque +1",ear1="Brutal Earring",ear2="Sherida Earring",
+        body="Jumalik Mail",hands="Buremte Gloves",ring1="Defending Ring",waist="Flume Belt +1"}
+    -- MISSING: ring2 Dark Ring
     -- MISSING: back Moonlight Cape
     -- MISSING: legs Meg. Chausses +2
     -- MISSING: feet Valorous Greaves
 
     -- MELEE (DUAL-WIELD) SETS FOR DNC AND NIN SUBJOB
     sets.engaged.DW = {ammo="Ginsen",
-        head=gear.taeon_head_tp,neck="Anu Torque",left_ear="Eabani Earring",right_ear="Dedition Earring",
-        body="Malignance Tabard",hands="Malignance Gloves",left_ring="Chirich Ring +1",right_ring="Chirich Ring +1",
+        head=gear.taeon_head_tp,neck="Anu Torque",ear1="Eabani Earring",ear2="Dedition Earring",
+        body="Malignance Tabard",hands="Malignance Gloves",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
         back=gear.stp_jse_back,waist="Kentarch Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
     sets.engaged.DW.DT = set_combine(sets.engaged.DT, {})
-    -- MISSING: left_ear Dudgeon Earring
-    -- MISSING: right_ear Heartseeker Earring
+    -- MISSING: ear1 Dudgeon Earring
+    -- MISSING: ear2 Heartseeker Earring
 
     sets.engaged.DW.Acc = {ammo="Falcon Eye",
-        neck="Combatant's Torque",left_ear="Brutal Earring",
-        body="Malignance Tabard",hands="Leyline Gloves",left_ring="Petrov Ring",right_ring="Epona's Ring",
+        neck="Combatant's Torque",ear1="Brutal Earring",
+        body="Malignance Tabard",hands="Leyline Gloves",ring1="Petrov Ring",ring2="Epona's Ring",
         waist="Grunfeld Rope"}
     -- MISSING: head Meghanada Visor +2
-    -- MISSING: left_ear Mache Earring +1
+    -- MISSING: ear1 Mache Earring +1
     -- MISSING: back Letalis Mantle
     -- MISSING: legs Flamma Dirs +2
     -- MISSING: feet Valorous Greaves
 
     sets.engaged.DW.Acc.DT = set_combine(sets.engaged.Acc.DT, {})
-    -- MISSING: left_ear Dudgeon Earring
-    -- MISSING: right_ear Heartseeker Earring
+    -- MISSING: ear1 Dudgeon Earring
+    -- MISSING: ear2 Heartseeker Earring
 
     -- GEARSETS FOR MASTER ENGAGED (SINGLE-WIELD) & PET ENGAGED
     sets.engaged.BothDD = set_combine(sets.engaged,{})

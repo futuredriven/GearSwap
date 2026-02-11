@@ -80,10 +80,10 @@ function init_gear_sets()
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 		neck={ name="Unmoving Collar +1", augments={'Path: A',}},
 		waist="Engraved Belt",
-		left_ear="Handler's Earring +1",
-		right_ear="Tuisto Earring",
-		left_ring="Regal Ring",
-		right_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
+		ear1="Handler's Earring +1",
+		ear2="Tuisto Earring",
+		ring1="Regal Ring",
+		ring2={ name="Gelatinous Ring +1", augments={'Path: A',}},
 		back=gear.tp_jse_back,
 	}
 
@@ -93,12 +93,12 @@ function init_gear_sets()
 	-- Don't need any special gear for Healing Waltz.
 	sets.precast.Waltz['Healing Waltz'] = {}
 	sets.precast.Step = {ammo={ name="Coiste Bodhar", augments={'Path: A',}},
-		head="Malignance Chapeau",neck={ name="Mnk. Nodowa +2", augments={'Path: A',}},left_ear="Mache Earring +1",right_ear="Telos Earring",
-		body={ name="Mpaca's Doublet", augments={'Path: A',}},hands={ name="Hes. Gloves +3", augments={'Enhances "Invigorate" effect',}},left_ring="Ramuh Ring +1",right_ring="Ramuh Ring +1",
+		head="Malignance Chapeau",neck={ name="Mnk. Nodowa +2", augments={'Path: A',}},ear1="Mache Earring +1",ear2="Telos Earring",
+		body={ name="Mpaca's Doublet", augments={'Path: A',}},hands={ name="Hes. Gloves +3", augments={'Enhances "Invigorate" effect',}},ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
 		back=gear.tp_jse_back,waist="Olseni Belt",legs="Mummu Kecks +2",feet="Malignance Boots"}
 	sets.precast.Flourish1 = {ammo={ name="Coiste Bodhar", augments={'Path: A',}},
-		head="Malignance Chapeau",neck={ name="Mnk. Nodowa +2", augments={'Path: A',}},left_ear="Mache Earring +1",right_ear="Telos Earring",
-		body={ name="Mpaca's Doublet", augments={'Path: A',}},hands={ name="Hes. Gloves +3", augments={'Enhances "Invigorate" effect',}},left_ring="Ramuh Ring +1",right_ring="Ramuh Ring +1",
+		head="Malignance Chapeau",neck={ name="Mnk. Nodowa +2", augments={'Path: A',}},ear1="Mache Earring +1",ear2="Telos Earring",
+		body={ name="Mpaca's Doublet", augments={'Path: A',}},hands={ name="Hes. Gloves +3", augments={'Enhances "Invigorate" effect',}},ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
 		back=gear.tp_jse_back,waist="Olseni Belt",legs="Mummu Kecks +2",feet="Malignance Boots"}
 
 
@@ -113,10 +113,10 @@ function init_gear_sets()
 		legs={ name="Herculean Trousers", augments={'Mag. Acc.+17','"Fast Cast"+6','STR+9',}},
 		feet={ name="Herculean Boots", augments={'"Fast Cast"+6',}},
 		neck="Orunmila's Torque",
-		left_ear="Enchntr. Earring +1",
-		right_ear="Loquac. Earring",
-		left_ring="Prolix Ring",
-		right_ring="Rahab Ring",
+		ear1="Enchntr. Earring +1",
+		ear2="Loquac. Earring",
+		ring1="Prolix Ring",
+		ring2="Rahab Ring",
 		back=gear.fc_jse_back,
 	}
 
@@ -138,10 +138,10 @@ function init_gear_sets()
 		feet="Herculean Boots",
 		neck="Fotia Gorget",
 		waist="Moonbow Belt +1",
-		left_ear="Sherida Earring",
-		right_ear={ name="Schere Earring", augments={'Path: A',}},
-		left_ring="Gere Ring",
-		right_ring="Niqmaddu Ring",
+		ear1="Sherida Earring",
+		ear2={ name="Schere Earring", augments={'Path: A',}},
+		ring1="Gere Ring",
+		ring2="Niqmaddu Ring",
 		back=gear.ws_jse_back,
 	}
 	-- Mirdain has no distinct Acc/FullAcc WS bases; keep generic variants empty
@@ -161,8 +161,8 @@ function init_gear_sets()
 sets.precast.WS['Raging Fists']    = {
 		head={ name="Adhemar Bonnet +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
 		neck="Fotia Gorget",
-		left_ear="Sherida Earring",
-		right_ear="Moonshade Earring",
+		ear1="Sherida Earring",
+		ear2="Moonshade Earring",
 		feet="Herculean Boots",
 	}
 	-- WISHLIST (Guide Upgrades - not owned)
@@ -171,8 +171,8 @@ sets.precast.WS['Howling Fist']    = {
 		head="Mpaca's Cap",
 		hands="Herculean Gloves",
 		neck="Fotia Gorget",
-		left_ear="Moonshade Earring",
-		right_ear="Schere Earring",
+		ear1="Moonshade Earring",
+		ear2="Schere Earring",
 		feet="Herculean Boots",
 	}
 	sets.precast.WS['Asuran Fists']    = set_combine(sets.precast.WS, {})
@@ -186,7 +186,7 @@ sets.precast.WS["Victory Smite"]   = {
 		legs={ name="Mpaca's Hose", augments={'Path: A',}},
 		feet="Herculean Boots",
 		neck="Fotia Gorget",
-		right_ear={ name="Schere Earring", augments={'Path: A',}},
+		ear2={ name="Schere Earring", augments={'Path: A',}},
 	}
 	-- WISHLIST (Guide Upgrades - not owned)
 	-- head: MISSING Ken. Jinpachi +1 (guide: WSD+)
@@ -205,9 +205,9 @@ sets.precast.WS['Dragon Kick']     = {
 		feet="Anch. Gaiters +3",
 		neck={ name="Mnk. Nodowa +2", augments={'Path: A',}},
 		waist="Moonbow Belt +1",
-		left_ear="Sherida Earring",
-		right_ear={ name="Schere Earring", augments={'Path: A',}},
-		left_ring="Gere Ring",
+		ear1="Sherida Earring",
+		ear2={ name="Schere Earring", augments={'Path: A',}},
+		ring1="Gere Ring",
 		back=gear.ws_jse_back,
 	}
 	sets.precast.WS['Tornado Kick']    = set_combine(sets.precast.WS['Dragon Kick'], {})
@@ -216,8 +216,8 @@ sets.precast.WS['Dragon Kick']     = {
 	sets.precast.WS["Raging Fists"].Acc = set_combine(sets.precast.WS["Raging Fists"], sets.precast.WSAcc)
 	sets.precast.WS["Howling Fist"].Acc = set_combine(sets.precast.WS["Howling Fist"], sets.precast.WSAcc)
 	sets.precast.WS["Asuran Fists"].Acc = set_combine(sets.precast.WS["Asuran Fists"], sets.precast.WSAcc)
-sets.precast.WS["Ascetic's Fury"].Acc = set_combine(sets.precast.WS["Ascetic's Fury"], sets.precast.WSAcc, {head="Mummu Bonnet +1",body="Mummu Jacket +2",hands={ name="Ryuo Tekko +1", augments={'STR+12','DEX+12','Accuracy+20',}},right_ring="Chirich Ring +1",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"})
-	sets.precast.WS["Victory Smite"].Acc = set_combine(sets.precast.WS["Victory Smite"], sets.precast.WSAcc, {head="Mummu Bonnet +1",right_ear="Moonshade Earring",body="Mummu Jacket +2",hands={ name="Ryuo Tekko +1", augments={'STR+12','DEX+12','Accuracy+20',}},right_ring="Chirich Ring +1",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"})
+sets.precast.WS["Ascetic's Fury"].Acc = set_combine(sets.precast.WS["Ascetic's Fury"], sets.precast.WSAcc, {head="Mummu Bonnet +1",body="Mummu Jacket +2",hands={ name="Ryuo Tekko +1", augments={'STR+12','DEX+12','Accuracy+20',}},ring2="Chirich Ring +1",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"})
+	sets.precast.WS["Victory Smite"].Acc = set_combine(sets.precast.WS["Victory Smite"], sets.precast.WSAcc, {head="Mummu Bonnet +1",ear2="Moonshade Earring",body="Mummu Jacket +2",hands={ name="Ryuo Tekko +1", augments={'STR+12','DEX+12','Accuracy+20',}},ring2="Chirich Ring +1",legs="Mummu Kecks +2",feet="Mummu Gamash. +2"})
 	sets.precast.WS["Shijin Spiral"].Acc = set_combine(sets.precast.WS["Shijin Spiral"], sets.precast.WSAcc)
 	sets.precast.WS["Dragon Kick"].Acc = set_combine(sets.precast.WS["Dragon Kick"], sets.precast.WSAcc)
 	sets.precast.WS["Tornado Kick"].Acc = set_combine(sets.precast.WS["Tornado Kick"], sets.precast.WSAcc)
@@ -233,17 +233,17 @@ sets.precast.WS["Ascetic's Fury"].Acc = set_combine(sets.precast.WS["Ascetic's F
 	
 sets.precast.WS['Cataclysm'] = {
 		-- ammo: MISSING Ghastly Tathlum +1 (from old set)
-		neck="Baetyl Pendant",left_ear="Friomisi Earring",
-		-- right_ear: MISSING Crematio Earring (from old set)
+		neck="Baetyl Pendant",ear1="Friomisi Earring",
+		-- ear2: MISSING Crematio Earring (from old set)
 		hands={ name="Ryuo Tekko +1", augments={'STR+12','DEX+12','Accuracy+20',}},
-		left_ring="Gere Ring",
+		ring1="Gere Ring",
 		back="Toro Cape",
 		-- legs: MISSING Nahtirah Trousers (from old set)
 	}
 	
 	-- Swap to these on Moonshade using WS if at 3000 TP
-sets.MaxTP = {left_ear="Sherida Earring",right_ear="Brutal Earring",}
-	sets.AccMaxTP = {left_ear="Mache Earring +1",right_ear="Telos Earring"}
+sets.MaxTP = {ear1="Sherida Earring",ear2="Brutal Earring",}
+	sets.AccMaxTP = {ear1="Mache Earring +1",ear2="Telos Earring"}
 	
 	-- Midcast Sets
 	-- Use the same fast cast set for midcast FastRecast as a best-effort Mirdain mapping
@@ -269,10 +269,10 @@ sets.idle = {
 		legs={ name="Mpaca's Hose", augments={'Path: A',}},
 		feet={ name="Mpaca's Boots", augments={'Path: A',}},
 		neck={ name="Bathy Choker +1", augments={'Path: A',}},
-		left_ear="Infused Earring",
-		right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-		left_ring="Chirich Ring +1",
-		right_ring="Karieyh Ring",
+		ear1="Infused Earring",
+		ear2={ name="Odnowa Earring +1", augments={'Path: A',}},
+		ring1="Chirich Ring +1",
+		ring2="Karieyh Ring",
 		back=gear.tp_jse_back,
 	}
 
@@ -287,10 +287,10 @@ sets.defense.PDT = {
 		feet="Nyame Sollerets",
 		neck={ name="Warder's Charm +1", augments={'Path: A',}},
 		waist="Engraved Belt",
-		left_ear="Tuisto Earring",
-		right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
-		left_ring="Defending Ring",
-		right_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
+		ear1="Tuisto Earring",
+		ear2={ name="Odnowa Earring +1", augments={'Path: A',}},
+		ring1="Defending Ring",
+		ring2={ name="Gelatinous Ring +1", augments={'Path: A',}},
 		back=gear.tp_jse_back,
 	}
 		
@@ -305,10 +305,10 @@ sets.defense.MEVA = {
 		feet="Nyame Sollerets",
 		neck="Warder's Charm +1",
 		waist="Engraved Belt",
-		left_ear="Etiolation Earring",
-		right_ear="Sanare Earring",
-		left_ring="Defending Ring",
-		right_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
+		ear1="Etiolation Earring",
+		ear2="Sanare Earring",
+		ring1="Defending Ring",
+		ring2={ name="Gelatinous Ring +1", augments={'Path: A',}},
 		back=gear.tp_jse_back,
 	}
 
@@ -336,10 +336,10 @@ sets.engaged = {
 		feet="Anch. Gaiters +3",
 		neck={ name="Mnk. Nodowa +2", augments={'Path: A',}},
 		waist="Moonbow Belt +1",
-		left_ear="Sherida Earring",
-		right_ear="Telos Earring",
-		left_ring="Gere Ring",
-		right_ring="Niqmaddu Ring",
+		ear1="Sherida Earring",
+		ear2="Telos Earring",
+		ring1="Gere Ring",
+		ring2="Niqmaddu Ring",
 		back=gear.tp_engaged_jse_back,
 	}
 	sets.engaged.Acc = {
@@ -350,10 +350,10 @@ sets.engaged = {
 		legs="Hes. Hose +3",
 		feet="Anch. Gaiters +3",
 		neck={ name="Mnk. Nodowa +2", augments={'Path: A',}},
-		left_ear="Mache Earring +1",
-		right_ear="Mache Earring +1",
-		left_ring="Chirich Ring +1",
-		right_ring="Chirich Ring +1",
+		ear1="Mache Earring +1",
+		ear2="Mache Earring +1",
+		ring1="Chirich Ring +1",
+		ring2="Chirich Ring +1",
 		waist="Moonbow Belt +1",
 		back=gear.tp_engaged_jse_back,
 	}
@@ -372,10 +372,10 @@ sets.engaged.PDT = {
 		feet={ name="Mpaca's Boots", augments={'Path: A',}},
 		neck={ name="Mnk. Nodowa +2", augments={'Path: A',}},
 		waist="Moonbow Belt +1",
-		left_ear="Sherida Earring",
-		right_ear={ name="Schere Earring", augments={'Path: A',}},
-		left_ring="Gere Ring",
-		right_ring="Niqmaddu Ring",
+		ear1="Sherida Earring",
+		ear2={ name="Schere Earring", augments={'Path: A',}},
+		ring1="Gere Ring",
+		ring2="Niqmaddu Ring",
 		back=gear.tp_engaged_jse_back,
 	}
 	sets.engaged.Acc.PDT = set_combine(sets.engaged.PDT, {})

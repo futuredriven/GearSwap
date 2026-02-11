@@ -101,14 +101,14 @@ function init_gear_sets()
     
     -- Steps (Pure Acc) - New in template, using old engaged gear
     sets.precast.Step = {ammo="Ginsen",
-        head=gear.taeon_head_tp,neck="Anu Torque",left_ear="Eabani Earring",right_ear="Sherida Earring",
-        body="Malignance Tabard",hands="Malignance Gloves",left_ring="Chirich Ring +1",right_ring="Chirich Ring +1",
+        head=gear.taeon_head_tp,neck="Anu Torque",ear1="Eabani Earring",ear2="Sherida Earring",
+        body="Malignance Tabard",hands="Malignance Gloves",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
         back=gear.stp_jse_back,waist="Kentarch Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
 
     -- Violent Flourish (Macc & Acc) - New in template, using old enfeebling gear
     sets.precast.JA['Violent Flourish'] = {ammo="Regal Gem",
-        head=gear.artifact_head,neck="Dls. Torque +2",left_ear="Snotra Earring",right_ear="Malignance Earring",
-        body=gear.empyrean_body,hands="Kaykaus Cuffs +1",left_ring="Kishar Ring",right_ring="Stikini Ring +1",
+        head=gear.artifact_head,neck="Dls. Torque +2",ear1="Snotra Earring",ear2="Malignance Earring",
+        body=gear.empyrean_body,hands="Kaykaus Cuffs +1",ring1="Kishar Ring",ring2="Stikini Ring +1",
         back=gear.mnd_jse_back,waist="Obstin. Sash",legs="Chironic Hose",feet=gear.artifact_feet}
 
     -- Waltz set (chr and vit)
@@ -119,17 +119,17 @@ function init_gear_sets()
 
     -- Fast cast sets for spells - Mapped from old sets.precast.FC
     sets.precast.FC = {range=empty,ammo="Impatiens",
-        head=gear.relic_head,left_ear="Loquac. Earring",right_ear="Malignance Earring",
+        head=gear.relic_head,ear1="Loquac. Earring",ear2="Malignance Earring",
         body=gear.artifact_body,hands="Leyline Gloves",
         back="Perimede Cape",waist="Witful Belt",feet=gear.carmine_feet_path_d}
         
     sets.precast.FC.DT = {range=empty,ammo="Impatiens",
-        head=gear.relic_head,left_ear="Loquac. Earring",right_ear="Malignance Earring",
+        head=gear.relic_head,ear1="Loquac. Earring",ear2="Malignance Earring",
         body=gear.artifact_body,hands="Leyline Gloves",
         back="Perimede Cape",waist="Witful Belt",feet=gear.carmine_feet_path_d}
 
     sets.precast.FullFC = {range=empty,ammo="Impatiens",
-        head=gear.relic_head,left_ear="Loquac. Earring",right_ear="Malignance Earring",
+        head=gear.relic_head,ear1="Loquac. Earring",ear2="Malignance Earring",
         body=gear.artifact_body,hands="Leyline Gloves",
         back="Perimede Cape",waist="Witful Belt",feet=gear.carmine_feet_path_d}
         
@@ -139,107 +139,107 @@ function init_gear_sets()
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined - Mapped from old sets.precast.WS
     sets.precast.WS = {range=empty,ammo="Crepuscular Pebble",
-        head="Nyame Helm",neck="Fotia Gorget",left_ear="Moonshade Earring",right_ear="Ishvara Earring",
-        body="Nyame Mail",hands="Malignance Gloves",left_ring="Rufescent Ring",right_ring="Karieyh Ring",
+        head="Nyame Helm",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
+        body="Nyame Mail",hands="Malignance Gloves",ring1="Rufescent Ring",ring2="Karieyh Ring",
         back=gear.wsd_jse_back,waist="Fotia Belt",legs="Nyame Flanchard",feet=gear.empyrean_feet}
         
     sets.precast.WS.Proc =     {range=empty,ammo="Hasty Pinion +1",
-        head=gear.artifact_head,neck="Combatant's Torque",left_ear="Moonshade Earring",right_ear="Regal Earring",
-        body=gear.artifact_body,hands=gear.relic_hands,left_ring="Rufescent Ring",right_ring="Karieyh Ring",
+        head=gear.artifact_head,neck="Combatant's Torque",ear1="Moonshade Earring",ear2="Regal Earring",
+        body=gear.artifact_body,hands=gear.relic_hands,ring1="Rufescent Ring",ring2="Karieyh Ring",
         back=gear.wsd_jse_back,waist="Prosilio Belt +1",legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
         
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
     sets.precast.WS['Requiescat'] = {range=empty,ammo="Regal Gem",
-        head=gear.artifact_head,neck="Fotia Gorget",left_ear="Moonshade Earring",right_ear="Regal Earring",
-        body=gear.artifact_body,hands=gear.artifact_hands,left_ring="Rufescent Ring",right_ring="Karieyh Ring",
+        head=gear.artifact_head,neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Regal Earring",
+        body=gear.artifact_body,hands=gear.artifact_hands,ring1="Rufescent Ring",ring2="Karieyh Ring",
         back=gear.mnd_jse_back,waist="Sailfi Belt +1",legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
 
     sets.precast.WS['Chant Du Cygne'] = {range=empty,ammo="Crepuscular Pebble",
-        head="Nyame Helm",neck="Fotia Gorget",left_ear="Moonshade Earring",right_ear="Ishvara Earring",
-        body="Nyame Mail",hands="Malignance Gloves",left_ring="Rufescent Ring",right_ring="Karieyh Ring",
+        head="Nyame Helm",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
+        body="Nyame Mail",hands="Malignance Gloves",ring1="Rufescent Ring",ring2="Karieyh Ring",
         back=gear.wsd_jse_back,waist="Fotia Belt",legs="Nyame Flanchard",feet=gear.empyrean_feet}
         
     sets.precast.WS['Evisceration'] = sets.precast.WS['Chant Du Cygne']
 
     sets.precast.WS['Savage Blade'] = {range=empty,ammo="Crepuscular Pebble",
-        head="Nyame Helm",neck="Dls. Torque +2",left_ear="Moonshade Earring",right_ear="Ishvara Earring",
-        body="Nyame Mail",hands="Malignance Gloves",left_ring="Rufescent Ring",right_ring="Karieyh Ring",
+        head="Nyame Helm",neck="Dls. Torque +2",ear1="Moonshade Earring",ear2="Ishvara Earring",
+        body="Nyame Mail",hands="Malignance Gloves",ring1="Rufescent Ring",ring2="Karieyh Ring",
         back=gear.wsd_jse_back,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet=gear.empyrean_feet}
         
     sets.precast.WS['Black Halo'] = {range=empty,ammo="Crepuscular Pebble",
-        head="Nyame Helm",neck="Dls. Torque +2",left_ear="Moonshade Earring",right_ear="Regal Earring",
-        body="Nyame Mail",hands="Malignance Gloves",left_ring="Rufescent Ring",right_ring="Karieyh Ring",
+        head="Nyame Helm",neck="Dls. Torque +2",ear1="Moonshade Earring",ear2="Regal Earring",
+        body="Nyame Mail",hands="Malignance Gloves",ring1="Rufescent Ring",ring2="Karieyh Ring",
         back=gear.wsd_jse_back,waist="Sailfi Belt +1",legs="Nyame Flanchard",feet=gear.empyrean_feet}
         
     sets.precast.WS['Sanguine Blade'] = {range=empty,ammo="Pemphredo Tathlum",
-        head="Pixie Hairpin +1",neck="Sanctity Necklace",left_ear="Regal Earring",right_ear="Malignance Earring",
-        body="Amalric Doublet +1",hands="Jhakri Cuffs +2",left_ring="Metamor. Ring +1",right_ring="Archon Ring",
+        head="Pixie Hairpin +1",neck="Sanctity Necklace",ear1="Regal Earring",ear2="Malignance Earring",
+        body="Amalric Doublet +1",hands="Jhakri Cuffs +2",ring1="Metamor. Ring +1",ring2="Archon Ring",
         back=gear.int_jse_back,waist="Refoccilation Stone",legs="Amalric Slops +1",feet="Amalric Nails +1"}
         
     sets.precast.WS['Seraph Blade'] = {range=empty,ammo="Pemphredo Tathlum",
-        head="Amalric Coif +1",neck="Sanctity Necklace",left_ear="Regal Earring",right_ear="Malignance Earring",
-        body="Amalric Doublet +1",hands="Jhakri Cuffs +2",left_ring="Metamor. Ring +1",right_ring="Archon Ring",
+        head="Amalric Coif +1",neck="Sanctity Necklace",ear1="Regal Earring",ear2="Malignance Earring",
+        body="Amalric Doublet +1",hands="Jhakri Cuffs +2",ring1="Metamor. Ring +1",ring2="Archon Ring",
         back=gear.int_jse_back,waist="Refoccilation Stone",legs="Amalric Slops +1",feet="Amalric Nails +1"}
         
     sets.precast.WS['Shining Strike'] = sets.precast.WS['Seraph Blade'] 
     sets.precast.WS['Flash Nova'] = sets.precast.WS['Seraph Blade'] 
         
     sets.precast.WS['Aeolian Edge'] = {range=empty,ammo="Pemphredo Tathlum",
-        head="Amalric Coif +1",neck="Sanctity Necklace",left_ear="Regal Earring",right_ear="Malignance Earring",
-        body="Amalric Doublet +1",hands="Jhakri Cuffs +2",left_ring="Metamor. Ring +1",right_ring="Archon Ring",
+        head="Amalric Coif +1",neck="Sanctity Necklace",ear1="Regal Earring",ear2="Malignance Earring",
+        body="Amalric Doublet +1",hands="Jhakri Cuffs +2",ring1="Metamor. Ring +1",ring2="Archon Ring",
         back=gear.int_jse_back,waist="Refoccilation Stone",legs="Amalric Slops +1",feet="Amalric Nails +1"}
         
     sets.precast.WS['Red Lotus Blade'] = sets.precast.WS['Aeolian Edge']
 
     -- Swap to these on Moonshade using WS if at 3000 TP
-    sets.MaxTP = {right_ear="Brutal Earring"}
-    sets.AccMaxTP = {right_ear="Telos Earring"}
-    sets.MagicalMaxTP = {right_ear="Friomisi Earring"}
+    sets.MaxTP = {ear2="Brutal Earring"}
+    sets.AccMaxTP = {ear2="Telos Earring"}
+    sets.MagicalMaxTP = {ear2="Friomisi Earring"}
     
     -- Midcast Sets
 
     -- Gear that converts elemental damage done to recover MP.
     -- MISSING: legs Psycloth Lappas
     sets.midcast.FastRecast = {range=empty,ammo="Hasty Pinion +1",
-        head=gear.relic_head,left_ear="Loquac. Earring",right_ear="Malignance Earring",
+        head=gear.relic_head,ear1="Loquac. Earring",ear2="Malignance Earring",
         body=gear.artifact_body,hands="Leyline Gloves",
         back="Perimede Cape",waist="Witful Belt",feet=gear.carmine_feet_path_d}
 
     sets.midcast.Cure = {main="Bunzi's Rod",sub="Sors Shield",range=empty,ammo="Hasty Pinion +1",
-        head="Kaykaus Mitra +1",neck="Incanter's Torque",left_ear="Beatific earring",right_ear="Roundel Earring",
-        body="Kaykaus Bliaut +1",hands="Kaykaus Cuffs +1",left_ring="Menelaus's Ring",right_ring="Stikini Ring +1",
+        head="Kaykaus Mitra +1",neck="Incanter's Torque",ear1="Beatific earring",ear2="Roundel Earring",
+        body="Kaykaus Bliaut +1",hands="Kaykaus Cuffs +1",ring1="Menelaus's Ring",ring2="Stikini Ring +1",
         back=gear.enmity_jse_back,waist="Luminary Sash",legs="Kaykaus Tights +1",feet="Kaykaus Boots +1"}
         
     sets.midcast.LightWeatherCure = {main="Chatoyant Staff",sub="Curatio Grip",range=empty,ammo="Hasty Pinion +1",
-        head="Kaykaus Mitra +1",neck="Incanter's Torque",left_ear="Beatific earring",right_ear="Roundel Earring",
-        body="Kaykaus Bliaut +1",hands="Kaykaus Cuffs +1",left_ring="Menelaus's Ring",right_ring="Stikini Ring +1",
+        head="Kaykaus Mitra +1",neck="Incanter's Torque",ear1="Beatific earring",ear2="Roundel Earring",
+        body="Kaykaus Bliaut +1",hands="Kaykaus Cuffs +1",ring1="Menelaus's Ring",ring2="Stikini Ring +1",
         back="Twilight Cape",waist="Hachirin-no-Obi",legs="Kaykaus Tights +1",feet="Kaykaus Boots +1"}
         
         --Cureset for if it's not light weather but is light day.
     sets.midcast.LightDayCure = {main="Chatoyant Staff",sub="Curatio Grip",range=empty,ammo="Hasty Pinion +1",
-        head="Kaykaus Mitra +1",neck="Incanter's Torque",left_ear="Beatific earring",right_ear="Roundel Earring",
-        body="Kaykaus Bliaut +1",hands="Kaykaus Cuffs +1",left_ring="Menelaus's Ring",right_ring="Stikini Ring +1",
+        head="Kaykaus Mitra +1",neck="Incanter's Torque",ear1="Beatific earring",ear2="Roundel Earring",
+        body="Kaykaus Bliaut +1",hands="Kaykaus Cuffs +1",ring1="Menelaus's Ring",ring2="Stikini Ring +1",
         back="Twilight Cape",waist="Hachirin-no-Obi",legs="Kaykaus Tights +1",feet="Kaykaus Boots +1"}
         
     sets.midcast.Cure.DT = {main="Bunzi's Rod",sub="Sors Shield",range=empty,ammo="Hasty Pinion +1",
-        head="Kaykaus Mitra +1",neck="Incanter's Torque",left_ear="Beatific earring",right_ear="Roundel Earring",
-        body="Kaykaus Bliaut +1",hands="Kaykaus Cuffs +1",left_ring="Menelaus's Ring",right_ring="Stikini Ring +1",
+        head="Kaykaus Mitra +1",neck="Incanter's Torque",ear1="Beatific earring",ear2="Roundel Earring",
+        body="Kaykaus Bliaut +1",hands="Kaykaus Cuffs +1",ring1="Menelaus's Ring",ring2="Stikini Ring +1",
         back=gear.enmity_jse_back,waist="Luminary Sash",legs="Kaykaus Tights +1",feet="Kaykaus Boots +1"}
         
     -- MISSING: head Vanya Hood
-    -- MISSING: left_ear Meili Earring
+    -- MISSING: ear1 Meili Earring
     -- MISSING: feet Vanya Clogs
     sets.midcast.Cursna = {main="Prelatic Pole",sub="Curatio Grip",range=empty,ammo="Staunch Tathlum +1",
-        neck="Debilis Medallion",right_ear="Beatific Earring",
-        body=gear.artifact_body,hands="Kaykaus Cuffs +1",left_ring="Menelaus's Ring",right_ring="Haoma's Ring",
+        neck="Debilis Medallion",ear2="Beatific Earring",
+        body=gear.artifact_body,hands="Kaykaus Cuffs +1",ring1="Menelaus's Ring",ring2="Haoma's Ring",
         back="Oretan. Cape +1",waist="Gishdubar Sash",legs=gear.relic_legs}
 
     sets.midcast.StatusRemoval = set_combine(sets.midcast.FastRecast, {main="Marin Staff +1",sub="Clemency Grip"})
     
-    -- MISSING: right_ear Gifted Earring
+    -- MISSING: ear2 Gifted Earring
     sets.midcast['Enhancing Magic'] = {main="Colada",sub="Ammurapi Shield",range=empty,ammo="Staunch Tathlum +1",
-        head=gear.carmine_head_path_d,neck="Dls. Torque +2",left_ear="Andoaa Earring",
-        body=gear.artifact_body,hands=gear.artifact_hands,left_ring="Stikini Ring +1",right_ring="Stikini Ring +1",
+        head=gear.carmine_head_path_d,neck="Dls. Torque +2",ear1="Andoaa Earring",
+        body=gear.artifact_body,hands=gear.artifact_hands,ring1="Stikini Ring +1",ring2="Stikini Ring +1",
         back="Ghostfyre Cape",waist="Olympus Sash",legs=gear.relic_legs,feet=gear.empyrean_feet}
 
     --Atrophy Gloves are better than Lethargy for me despite the set bonus for duration on others.        
@@ -258,33 +258,33 @@ function init_gear_sets()
     sets.midcast.Temper = sets.EnhancingSkill
     sets.midcast.Enspell = sets.EnhancingSkill
     sets.midcast.BoostStat = {hands=gear.artifact_hands}
-    sets.midcast.Stoneskin = {head="Umuthi Hat",neck="Nodens Gorget",right_ear="Earthcry Earring",waist="Siegel Sash",legs="Shedir Seraweels"}
-    sets.midcast.Protect = {right_ring="Sheltered Ring"}
-    sets.midcast.Shell = {right_ring="Sheltered Ring"}
+    sets.midcast.Stoneskin = {head="Umuthi Hat",neck="Nodens Gorget",ear2="Earthcry Earring",waist="Siegel Sash",legs="Shedir Seraweels"}
+    sets.midcast.Protect = {ring2="Sheltered Ring"}
+    sets.midcast.Shell = {ring2="Sheltered Ring"}
     sets.midcast.Regen = {main="Bunzi's Rod",sub="Ammurapi Shield"}  -- New in template, using enhancing gear
     
     sets.midcast.Curaga = sets.midcast.Cure
-    sets.Self_Healing = {left_ear="Etiolation Earring",hands="Buremte Gloves",right_ring="Kunaji Ring",waist="Gishdubar Sash"}
-    sets.Cure_Received = {hands="Buremte Gloves",right_ring="Kunaji Ring",waist="Gishdubar Sash"}
+    sets.Self_Healing = {ear1="Etiolation Earring",hands="Buremte Gloves",ring2="Kunaji Ring",waist="Gishdubar Sash"}
+    sets.Cure_Received = {hands="Buremte Gloves",ring2="Kunaji Ring",waist="Gishdubar Sash"}
     sets.Self_Refresh = {back="Grapevine Cape",waist="Gishdubar Sash"}
-    sets.Self_Phalanx = {main="Sakpata's Sword",neck="Incanter's Torque",right_ear="Malignance Earring"}  -- Mapped from old sets.midcast.Phalanx
+    sets.Self_Phalanx = {main="Sakpata's Sword",neck="Incanter's Torque",ear2="Malignance Earring"}  -- Mapped from old sets.midcast.Phalanx
     sets.Self_Phalanx.DW = {main="Sakpata's Sword",sub="Pukulatmuj"}  -- Using old Temper.DW sub as reference
     
     sets.midcast['Enfeebling Magic'] = {main="Maxentius",sub="Ammurapi Shield",range=empty,ammo="Regal Gem",
-        head=gear.artifact_head,neck="Dls. Torque +2",left_ear="Snotra Earring",right_ear="Malignance Earring",
-        body=gear.empyrean_body,hands="Kaykaus Cuffs +1",left_ring="Kishar Ring",right_ring="Stikini Ring +1",
+        head=gear.artifact_head,neck="Dls. Torque +2",ear1="Snotra Earring",ear2="Malignance Earring",
+        body=gear.empyrean_body,hands="Kaykaus Cuffs +1",ring1="Kishar Ring",ring2="Stikini Ring +1",
         back=gear.mnd_jse_back,waist="Obstin. Sash",legs="Chironic Hose",feet=gear.artifact_feet}
         
     sets.midcast['Enfeebling Magic'].Resistant = {main="Maxentius",sub="Ammurapi Shield",range="Ullr",ammo=empty,
-        head=gear.artifact_head,neck="Dls. Torque +2",left_ear="Snotra Earring",right_ear="Malignance Earring",
-        body=gear.empyrean_body,hands="Kaykaus Cuffs +1",left_ring="Stikini Ring +1",right_ring="Stikini Ring +1",
+        head=gear.artifact_head,neck="Dls. Torque +2",ear1="Snotra Earring",ear2="Malignance Earring",
+        body=gear.empyrean_body,hands="Kaykaus Cuffs +1",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
         back=gear.mnd_jse_back,waist="Luminary Sash",legs="Chironic Hose",feet=gear.artifact_feet}
         
     sets.midcast['Enfeebling Magic'].DW = {main="Bunzi's Rod",sub="Maxentius"}
         
     sets.midcast.Sleep = {main="Maxentius",sub="Ammurapi Shield",range="Ullr",ammo=empty,
-        head=gear.artifact_head,neck="Dls. Torque +2",left_ear="Snotra Earring",right_ear="Malignance Earring",
-        body=gear.empyrean_body,hands="Kaykaus Cuffs +1",left_ring="Kishar Ring",right_ring="Stikini Ring +1",
+        head=gear.artifact_head,neck="Dls. Torque +2",ear1="Snotra Earring",ear2="Malignance Earring",
+        body=gear.empyrean_body,hands="Kaykaus Cuffs +1",ring1="Kishar Ring",ring2="Stikini Ring +1",
         back=gear.int_jse_back,waist="Acuity Belt +1",legs="Chironic Hose",feet=gear.artifact_feet}
         
     sets.midcast.Bind = sets.midcast.Sleep
@@ -299,8 +299,8 @@ function init_gear_sets()
     sets.midcast.Bio = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
         
     sets.midcast.Sleep.Resistant = {main="Maxentius",sub="Ammurapi Shield",range="Ullr",ammo=empty,
-        head=gear.artifact_head,neck="Dls. Torque +2",left_ear="Snotra Earring",right_ear="Malignance Earring",
-        body=gear.empyrean_body,hands="Kaykaus Cuffs +1",left_ring="Stikini Ring +1",right_ring="Stikini Ring +1",
+        head=gear.artifact_head,neck="Dls. Torque +2",ear1="Snotra Earring",ear2="Malignance Earring",
+        body=gear.empyrean_body,hands="Kaykaus Cuffs +1",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
         back=gear.int_jse_back,waist="Acuity Belt +1",legs="Chironic Hose",feet=gear.artifact_feet}
         
     sets.midcast.Bind.Resistant = sets.midcast.Sleep.Resistant
@@ -311,8 +311,8 @@ function init_gear_sets()
     sets.midcast.Break.DW = sets.midcast.Sleep.DW
 
     sets.midcast.Dispel = {main="Maxentius",sub="Ammurapi Shield",range="Ullr",ammo=empty,
-        head=gear.artifact_head,neck="Dls. Torque +2",left_ear="Snotra Earring",right_ear="Malignance Earring",
-        body=gear.empyrean_body,hands="Kaykaus Cuffs +1",left_ring="Stikini Ring +1",right_ring="Stikini Ring +1",
+        head=gear.artifact_head,neck="Dls. Torque +2",ear1="Snotra Earring",ear2="Malignance Earring",
+        body=gear.empyrean_body,hands="Kaykaus Cuffs +1",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
         back=gear.mnd_jse_back,waist="Luminary Sash",legs="Chironic Hose",feet=gear.artifact_feet}
         
     sets.midcast.Dispel.DW = {main="Bunzi's Rod",sub="Maxentius"}
@@ -320,15 +320,15 @@ function init_gear_sets()
     sets.midcast.Dispelga.DW = {main="Daybreak",sub="Bunzi's Rod"}
     
     sets.midcast.Frazzle = {main="Maxentius",sub="Ammurapi Shield",range=empty,ammo="Regal Gem",
-        head=gear.artifact_head,neck="Dls. Torque +2",left_ear="Snotra Earring",right_ear="Malignance Earring",
-        body=gear.empyrean_body,hands=gear.empyrean_hands,left_ring="Stikini Ring +1",right_ring="Stikini Ring +1",
+        head=gear.artifact_head,neck="Dls. Torque +2",ear1="Snotra Earring",ear2="Malignance Earring",
+        body=gear.empyrean_body,hands=gear.empyrean_hands,ring1="Stikini Ring +1",ring2="Stikini Ring +1",
         back=gear.mnd_jse_back,waist="Obstin. Sash",legs="Chironic Hose",feet=gear.artifact_feet}
         
     sets.midcast.Distract = sets.midcast.Frazzle
         
     sets.midcast.Frazzle.Resistant = {main="Maxentius",sub="Ammurapi Shield",range="Ullr",ammo=empty,
-        head=gear.artifact_head,neck="Dls. Torque +2",left_ear="Snotra Earring",right_ear="Malignance Earring",
-        body=gear.empyrean_body,hands=gear.empyrean_hands,left_ring="Stikini Ring +1",right_ring="Stikini Ring +1",
+        head=gear.artifact_head,neck="Dls. Torque +2",ear1="Snotra Earring",ear2="Malignance Earring",
+        body=gear.empyrean_body,hands=gear.empyrean_hands,ring1="Stikini Ring +1",ring2="Stikini Ring +1",
         back=gear.mnd_jse_back,waist="Luminary Sash",legs="Chironic Hose",feet=gear.artifact_feet}
         
     sets.midcast.Distract.Resistant = sets.midcast.Frazzle.Resistant
@@ -338,16 +338,16 @@ function init_gear_sets()
     sets.midcast.Distract.DW = sets.midcast.Frazzle.DW
     
     sets.midcast.Addle = {main="Maxentius",sub="Ammurapi Shield",range=empty,ammo="Regal Gem",
-        head=gear.artifact_head,neck="Dls. Torque +2",left_ear="Snotra Earring",right_ear="Malignance Earring",
-        body=gear.empyrean_body,hands="Kaykaus Cuffs +1",left_ring="Kishar Ring",right_ring="Stikini Ring +1",
+        head=gear.artifact_head,neck="Dls. Torque +2",ear1="Snotra Earring",ear2="Malignance Earring",
+        body=gear.empyrean_body,hands="Kaykaus Cuffs +1",ring1="Kishar Ring",ring2="Stikini Ring +1",
         back=gear.mnd_jse_back,waist="Obstin. Sash",legs="Chironic Hose",feet=gear.artifact_feet}
         
     sets.midcast.Paralyze = sets.midcast.Addle
     sets.midcast.Slow = sets.midcast.Addle
     
     sets.midcast.Addle.Resistant = {main="Maxentius",sub="Ammurapi Shield",range="Ullr",ammo=empty,
-        head=gear.artifact_head,neck="Dls. Torque +2",left_ear="Snotra Earring",right_ear="Malignance Earring",
-        body=gear.empyrean_body,hands="Kaykaus Cuffs +1",left_ring="Stikini Ring +1",right_ring="Stikini Ring +1",
+        head=gear.artifact_head,neck="Dls. Torque +2",ear1="Snotra Earring",ear2="Malignance Earring",
+        body=gear.empyrean_body,hands="Kaykaus Cuffs +1",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
         back=gear.mnd_jse_back,waist="Luminary Sash",legs="Chironic Hose",feet=gear.artifact_feet}
         
     sets.midcast.Paralyze.Resistant = sets.midcast.Addle.Resistant
@@ -358,13 +358,13 @@ function init_gear_sets()
     sets.midcast.Slow.DW = sets.midcast.Addle.DW
     
     sets.midcast.Gravity = {main="Maxentius",sub="Ammurapi Shield",range=empty,ammo="Regal Gem",
-        head=gear.artifact_head,neck="Dls. Torque +2",left_ear="Snotra Earring",right_ear="Malignance Earring",
-        body=gear.empyrean_body,hands="Kaykaus Cuffs +1",left_ring="Kishar Ring",right_ring="Stikini Ring +1",
+        head=gear.artifact_head,neck="Dls. Torque +2",ear1="Snotra Earring",ear2="Malignance Earring",
+        body=gear.empyrean_body,hands="Kaykaus Cuffs +1",ring1="Kishar Ring",ring2="Stikini Ring +1",
         back=gear.int_jse_back,waist="Obstin. Sash",legs="Chironic Hose",feet=gear.artifact_feet}
         
     sets.midcast.Gravity.Resistant = {main="Maxentius",sub="Ammurapi Shield",range=empty,ammo="Regal Gem",
-        head=gear.artifact_head,neck="Dls. Torque +2",left_ear="Snotra Earring",right_ear="Malignance Earring",
-        body=gear.empyrean_body,hands="Kaykaus Cuffs +1",left_ring="Stikini Ring +1",right_ring="Stikini Ring +1",
+        head=gear.artifact_head,neck="Dls. Torque +2",ear1="Snotra Earring",ear2="Malignance Earring",
+        body=gear.empyrean_body,hands="Kaykaus Cuffs +1",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
         back=gear.int_jse_back,waist="Luminary Sash",legs="Chironic Hose",feet=gear.artifact_feet}
         
     sets.midcast.Gravity.DW = {main="Bunzi's Rod",sub="Maxentius"}
@@ -378,36 +378,36 @@ function init_gear_sets()
     sets.midcast.Blind.DW = sets.midcast.Gravity.DW
     
     sets.midcast.Silence = {main="Maxentius",sub="Ammurapi Shield",range="Ullr",ammo=empty,
-        head=gear.artifact_head,neck="Dls. Torque +2",left_ear="Snotra Earring",right_ear="Malignance Earring",
-        body=gear.empyrean_body,hands="Kaykaus Cuffs +1",left_ring="Kishar Ring",right_ring="Stikini Ring +1",
+        head=gear.artifact_head,neck="Dls. Torque +2",ear1="Snotra Earring",ear2="Malignance Earring",
+        body=gear.empyrean_body,hands="Kaykaus Cuffs +1",ring1="Kishar Ring",ring2="Stikini Ring +1",
         back=gear.int_jse_back,waist="Acuity Belt +1",legs="Chironic Hose",feet=gear.artifact_feet}
         
     sets.midcast.Silence.Resistant = {main="Maxentius",sub="Ammurapi Shield",range="Ullr",ammo=empty,
-        head=gear.artifact_head,neck="Dls. Torque +2",left_ear="Snotra Earring",right_ear="Malignance Earring",
-        body=gear.empyrean_body,hands="Kaykaus Cuffs +1",left_ring="Stikini Ring +1",right_ring="Stikini Ring +1",
+        head=gear.artifact_head,neck="Dls. Torque +2",ear1="Snotra Earring",ear2="Malignance Earring",
+        body=gear.empyrean_body,hands="Kaykaus Cuffs +1",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
         back=gear.mnd_jse_back,waist="Luminary Sash",legs="Chironic Hose",feet=gear.artifact_feet}
         
     sets.midcast.Silence.DW = {main="Bunzi's Rod",sub="Daybreak"}
     
     --After Bunzi's is augmented it will probably win on low-tier nukes.
     sets.midcast['Elemental Magic'] = {main="Bunzi's Rod",sub="Ammurapi Shield",range=empty,ammo="Pemphredo Tathlum",
-        head="Amalric Coif +1",neck="Sanctity Necklace",left_ear="Regal Earring",right_ear="Malignance Earring",
-        body="Amalric Doublet +1",hands="Amalric Gages +1",left_ring="Metamor. Ring +1",right_ring="Freke Ring",
+        head="Amalric Coif +1",neck="Sanctity Necklace",ear1="Regal Earring",ear2="Malignance Earring",
+        body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Metamor. Ring +1",ring2="Freke Ring",
         back=gear.int_jse_back,waist="Sacro Cord",legs="Amalric Slops +1",feet="Amalric Nails +1"}
         
     sets.midcast['Elemental Magic'].DT = {main="Bunzi's Rod",sub="Ammurapi Shield",range=empty,ammo="Pemphredo Tathlum",
-        head="Amalric Coif +1",neck="Sanctity Necklace",left_ear="Regal Earring",right_ear="Malignance Earring",
-        body="Amalric Doublet +1",hands="Amalric Gages +1",left_ring="Metamor. Ring +1",right_ring="Freke Ring",
+        head="Amalric Coif +1",neck="Sanctity Necklace",ear1="Regal Earring",ear2="Malignance Earring",
+        body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Metamor. Ring +1",ring2="Freke Ring",
         back=gear.int_jse_back,waist="Sacro Cord",legs="Amalric Slops +1",feet="Amalric Nails +1"}
         
     sets.midcast['Elemental Magic'].Resistant = {main="Bunzi's Rod",sub="Ammurapi Shield",range="Ullr",ammo=empty,
-        head="Amalric Coif +1",neck="Sanctity Necklace",left_ear="Regal Earring",right_ear="Malignance Earring",
-        body="Amalric Doublet +1",hands="Amalric Gages +1",left_ring="Metamor. Ring +1",right_ring="Freke Ring",
+        head="Amalric Coif +1",neck="Sanctity Necklace",ear1="Regal Earring",ear2="Malignance Earring",
+        body="Amalric Doublet +1",hands="Amalric Gages +1",ring1="Metamor. Ring +1",ring2="Freke Ring",
         back=gear.int_jse_back,waist="Sacro Cord",legs="Amalric Slops +1",feet="Amalric Nails +1"}
         
     sets.midcast['Elemental Magic'].Proc = {main=empty,sub=empty,range=empty,ammo="Impatiens",
-        head=gear.empyrean_head,neck="Dls. Torque +2",left_ear="Malignance Earring",right_ear="Loquac. Earring",
-        body=gear.empyrean_body,hands=gear.empyrean_hands,left_ring="Kishar Ring",right_ring="Prolix Ring",
+        head=gear.empyrean_head,neck="Dls. Torque +2",ear1="Malignance Earring",ear2="Loquac. Earring",
+        body=gear.empyrean_body,hands=gear.empyrean_hands,ring1="Kishar Ring",ring2="Prolix Ring",
         back=gear.enmity_jse_back,waist="Flume Belt +1",legs=gear.empyrean_legs,feet=gear.empyrean_feet}
         
     sets.midcast['Elemental Magic'].HighTierNuke = set_combine(sets.midcast['Elemental Magic'], {})
@@ -419,47 +419,47 @@ function init_gear_sets()
     
     -- Gear for Magic Burst mode.
     sets.MagicBurst = {main="Maxentius",sub="Ammurapi Shield",range=empty,ammo="Ghastly Tathlum +1",
-        head="Ea Hat",neck="Mizu. Kubikazari",left_ear="Regal Earring",right_ear="Malignance Earring",
-        body="Ea Houppe.",hands="Amalric Gages +1",left_ring="Mujin Band",right_ring="Shiva Ring +1",
+        head="Ea Hat",neck="Mizu. Kubikazari",ear1="Regal Earring",ear2="Malignance Earring",
+        body="Ea Houppe.",hands="Amalric Gages +1",ring1="Mujin Band",ring2="Shiva Ring +1",
         back=gear.int_jse_back,legs="Ea Slops",feet="Amalric Nails +1"}
         
     sets.midcast.Impact = {main="Maxentius",sub="Ammurapi Shield",range="Ullr",ammo=empty,
-        head=empty,neck="Dls. Torque +2",left_ear="Snotra Earring",right_ear="Malignance Earring",
-        body="Twilight Cloak",hands="Kaykaus Cuffs +1",left_ring="Metamor. Ring +1",right_ring="Stikini Ring +1",
+        head=empty,neck="Dls. Torque +2",ear1="Snotra Earring",ear2="Malignance Earring",
+        body="Twilight Cloak",hands="Kaykaus Cuffs +1",ring1="Metamor. Ring +1",ring2="Stikini Ring +1",
         back=gear.int_jse_back,waist="Acuity Belt +1",legs="Chironic Hose",feet=gear.artifact_feet}
 
     sets.midcast['Dark Magic'] = {main="Rubicundity",sub="Ammurapi Shield",range="Ullr",ammo=empty,
-        head="Amalric Coif +1",neck="Erra Pendant",left_ear="Regal Earring",right_ear="Malignance Earring",
-        body=gear.relic_body,hands=gear.empyrean_hands,left_ring="Metamor. Ring +1",right_ring="Stikini Ring +1",
+        head="Amalric Coif +1",neck="Erra Pendant",ear1="Regal Earring",ear2="Malignance Earring",
+        body=gear.relic_body,hands=gear.empyrean_hands,ring1="Metamor. Ring +1",ring2="Stikini Ring +1",
         back=gear.int_jse_back,waist="Luminary Sash",legs="Chironic Hose",feet="Amalric Nails +1"}
 
     sets.midcast.Drain = {main="Rubicundity",sub="Ammurapi Shield",range="Ullr",ammo=empty,
-        head="Pixie Hairpin +1",neck="Erra Pendant",left_ear="Regal Earring",right_ear="Malignance Earring",
-        body=gear.relic_body,hands=gear.empyrean_hands,left_ring="Evanescence Ring",right_ring="Archon Ring",
+        head="Pixie Hairpin +1",neck="Erra Pendant",ear1="Regal Earring",ear2="Malignance Earring",
+        body=gear.relic_body,hands=gear.empyrean_hands,ring1="Evanescence Ring",ring2="Archon Ring",
         back=gear.int_jse_back,waist="Fucho-no-obi",legs="Chironic Hose",feet="Amalric Nails +1"}
 
     sets.midcast.Aspir = sets.midcast.Drain
     
     -- MISSING: body Zendik Robe
     sets.midcast['Absorb-TP'] = {main="Maxentius",sub="Ammurapi Shield",range="Ullr",ammo=empty,
-        head=gear.relic_head,neck="Dls. Torque +2",left_ear="Snotra Earring",right_ear="Malignance Earring",
-        hands=gear.empyrean_hands,left_ring="Metamor. Ring +1",right_ring="Stikini Ring +1",
+        head=gear.relic_head,neck="Dls. Torque +2",ear1="Snotra Earring",ear2="Malignance Earring",
+        hands=gear.empyrean_hands,ring1="Metamor. Ring +1",ring2="Stikini Ring +1",
         back=gear.int_jse_back,waist="Sailfi Belt +1",legs="Chironic Hose",feet="Amalric Nails +1"}
         
     sets.midcast['Absorb-TP'].Resistant = {main="Maxentius",sub="Ammurapi Shield",range="Ullr",ammo=empty,
-        head=gear.relic_head,neck="Dls. Torque +2",left_ear="Snotra Earring",right_ear="Malignance Earring",
-        body=gear.relic_body,hands=gear.empyrean_hands,left_ring="Metamor. Ring +1",right_ring="Stikini Ring +1",
+        head=gear.relic_head,neck="Dls. Torque +2",ear1="Snotra Earring",ear2="Malignance Earring",
+        body=gear.relic_body,hands=gear.empyrean_hands,ring1="Metamor. Ring +1",ring2="Stikini Ring +1",
         back=gear.int_jse_back,waist="Acuity Belt +1",legs="Chironic Hose",feet="Amalric Nails +1"}
         
     -- MISSING: body Zendik Robe
     sets.midcast.Stun = {main="Maxentius",sub="Ammurapi Shield",range="Ullr",ammo=empty,
-        head=gear.relic_head,neck="Dls. Torque +2",left_ear="Snotra Earring",right_ear="Malignance Earring",
-        hands=gear.empyrean_hands,left_ring="Metamor. Ring +1",right_ring="Stikini Ring +1",
+        head=gear.relic_head,neck="Dls. Torque +2",ear1="Snotra Earring",ear2="Malignance Earring",
+        hands=gear.empyrean_hands,ring1="Metamor. Ring +1",ring2="Stikini Ring +1",
         back=gear.int_jse_back,waist="Sailfi Belt +1",legs="Chironic Hose",feet="Amalric Nails +1"}
 
     sets.midcast.Stun.Resistant = {main="Maxentius",sub="Ammurapi Shield",range="Ullr",ammo=empty,
-        head=gear.relic_head,neck="Dls. Torque +2",left_ear="Snotra Earring",right_ear="Malignance Earring",
-        body=gear.relic_body,hands=gear.empyrean_hands,left_ring="Metamor. Ring +1",right_ring="Stikini Ring +1",
+        head=gear.relic_head,neck="Dls. Torque +2",ear1="Snotra Earring",ear2="Malignance Earring",
+        body=gear.relic_body,hands=gear.empyrean_hands,ring1="Metamor. Ring +1",ring2="Stikini Ring +1",
         back=gear.int_jse_back,waist="Acuity Belt +1",legs="Chironic Hose",feet="Amalric Nails +1"}
         
     sets.midcast.Stun.DW = {main="Bunzi's Rod",sub="Maxentius"}
@@ -471,12 +471,12 @@ function init_gear_sets()
     sets.HPDown = {}
         
     -- MISSING: head Gende. Caubeen +1
-    -- MISSING: left_ear Gifted Earring
-    -- MISSING: right_ear Mendi. Earring
+    -- MISSING: ear1 Gifted Earring
+    -- MISSING: ear2 Mendi. Earring
     -- MISSING: back Ortania's cape +1
     sets.HPCure = {main="Bunzi's Rod",sub="Sors Shield",range=empty,ammo="Hasty Pinion +1",
         neck="Unmoving Collar +1",
-        body=gear.artifact_body,hands="Kaykaus Cuffs +1",left_ring="Gelatinous Ring +1",right_ring="Meridian Ring",
+        body=gear.artifact_body,hands="Kaykaus Cuffs +1",ring1="Gelatinous Ring +1",ring2="Meridian Ring",
         waist="Luminary Sash",legs=gear.carmine_legs_path_d,feet="Kaykaus Boots +1"}
     
     sets.buff.Doom = set_combine(sets.buff.Doom, {})
@@ -489,63 +489,63 @@ function init_gear_sets()
     -- MISSING: back Umbra Cape
     -- MISSING: legs Lengo Pants
     sets.resting = {main="Chatoyant Staff",range=empty,ammo="Impatiens",
-        head=gear.artifact_head,neck="Loricate Torque +1",left_ear="Etiolation Earring",right_ear="Ethereal Earring",
-        body="Jhakri Robe +2",left_ring="Defending Ring",right_ring="Sheltered Ring",
+        head=gear.artifact_head,neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
+        body="Jhakri Robe +2",ring1="Defending Ring",ring2="Sheltered Ring",
         waist="Flume Belt +1",feet=gear.chironic_refresh_feet}
     
     sets.Ballista = {main="Sakpata's Sword",sub="Sacro Bulwark",range=empty,ammo="Staunch Tathlum +1",
-        head="Bunzi's Hat",neck="Dls. Torque +2",left_ear="Etiolation Earring",right_ear="Ethereal Earring",
-        body="Bunzi's Robe",hands="Bunzi's Gloves",left_ring="Shneddick Ring",right_ring="Shadow Ring",
+        head="Bunzi's Hat",neck="Dls. Torque +2",ear1="Etiolation Earring",ear2="Ethereal Earring",
+        body="Bunzi's Robe",hands="Bunzi's Gloves",ring1="Shneddick Ring",ring2="Shadow Ring",
         back=gear.enmity_jse_back,waist="Carrier's Sash",legs="Bunzi's Pants",feet="Bunzi's Sabots"}
 
     -- Idle sets
     sets.idle = {main="Colada",sub="Sacro Bulwark",range=empty,ammo="Homiliary",
-        head=gear.artifact_head,neck="Loricate Torque +1",left_ear="Etiolation Earring",right_ear="Ethereal Earring",
-        body="Shamash Robe",hands="Malignance Gloves",left_ring="Stikini Ring +1",right_ring="Stikini Ring +1",
+        head=gear.artifact_head,neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
+        body="Shamash Robe",hands="Malignance Gloves",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
         back=gear.enmity_jse_back,waist="Flume Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
         
     sets.idle.PDT = {main="Sakpata's Sword",sub="Sacro Bulwark",range=empty,ammo="Staunch Tathlum +1",
-        head="Nyame Helm",neck="Loricate Torque +1",left_ear="Etiolation Earring",right_ear="Ethereal Earring",
-        body="Nyame Mail",hands="Nyame Gauntlets",left_ring="Defending Ring",right_ring="Patricius Ring",
+        head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
+        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Patricius Ring",
         back=gear.enmity_jse_back,waist="Flume Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
         
     -- MISSING: neck Warder's Charm +1
     sets.idle.MDT = {main="Daybreak",sub="Sacro Bulwark",range=empty,ammo="Staunch Tathlum +1",
-        head="Bunzi's Hat",left_ear="Etiolation Earring",right_ear="Sanare Earring",
-        body="Bunzi's Robe",hands="Bunzi's Gloves",left_ring="Defending Ring",right_ring="Shadow Ring",
+        head="Bunzi's Hat",ear1="Etiolation Earring",ear2="Sanare Earring",
+        body="Bunzi's Robe",hands="Bunzi's Gloves",ring1="Defending Ring",ring2="Shadow Ring",
         back=gear.enmity_jse_back,waist="Carrier's Sash",legs="Bunzi's Pants",feet="Bunzi's Sabots"}
         
     -- MISSING: neck Warder's Charm +1
     sets.idle.MEVA = {main="Daybreak",sub="Sacro Bulwark",range=empty,ammo="Staunch Tathlum +1",
-        head="Bunzi's Hat",left_ear="Etiolation Earring",right_ear="Sanare Earring",
-        body="Bunzi's Robe",hands="Bunzi's Gloves",left_ring="Defending Ring",right_ring="Shadow Ring",
+        head="Bunzi's Hat",ear1="Etiolation Earring",ear2="Sanare Earring",
+        body="Bunzi's Robe",hands="Bunzi's Gloves",ring1="Defending Ring",ring2="Shadow Ring",
         back=gear.enmity_jse_back,waist="Carrier's Sash",legs="Bunzi's Pants",feet="Bunzi's Sabots"}
         
     -- MISSING: neck Warder's Charm +1
     sets.idle.Aminon = {main="Daybreak",sub="Sacro Bulwark",range=empty,ammo="Staunch Tathlum +1",
-        head="Bunzi's Hat",left_ear="Etiolation Earring",right_ear="Sanare Earring",
-        body="Bunzi's Robe",hands="Bunzi's Gloves",left_ring="Defending Ring",right_ring="Shadow Ring",
+        head="Bunzi's Hat",ear1="Etiolation Earring",ear2="Sanare Earring",
+        body="Bunzi's Robe",hands="Bunzi's Gloves",ring1="Defending Ring",ring2="Shadow Ring",
         back=gear.enmity_jse_back,waist="Carrier's Sash",legs="Bunzi's Pants",feet="Bunzi's Sabots"}
     
     -- Defense sets
     sets.defense.PDT = {range=empty,ammo="Staunch Tathlum +1",
-        head="Nyame Helm",neck="Loricate Torque +1",left_ear="Etiolation Earring",right_ear="Ethereal Earring",
-        body="Nyame Mail",hands="Nyame Gauntlets",left_ring="Defending Ring",right_ring="Patricius Ring",
+        head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
+        body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Patricius Ring",
         back=gear.enmity_jse_back,waist="Flume Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
     sets.defense.NukeLock = sets.midcast['Elemental Magic']
         
     -- MISSING: neck Warder's Charm +1
     sets.defense.MDT = {range=empty,ammo="Staunch Tathlum +1",
-        head="Bunzi's Hat",left_ear="Etiolation Earring",right_ear="Sanare Earring",
-        body="Bunzi's Robe",hands="Bunzi's Gloves",left_ring="Defending Ring",right_ring="Shadow Ring",
+        head="Bunzi's Hat",ear1="Etiolation Earring",ear2="Sanare Earring",
+        body="Bunzi's Robe",hands="Bunzi's Gloves",ring1="Defending Ring",ring2="Shadow Ring",
         back=gear.enmity_jse_back,waist="Carrier's Sash",legs="Bunzi's Pants",feet="Bunzi's Sabots"}
         
     -- MISSING: head Malignance Chapeau
     -- MISSING: neck Warder's Charm +1
     sets.defense.MEVA = {range=empty,ammo="Staunch Tathlum +1",
-        left_ear="Etiolation Earring",right_ear="Ethereal Earring",
-        body="Malignance Tabard",hands="Malignance Gloves",left_ring="Defending Ring",right_ring="Patricius Ring",
+        ear1="Etiolation Earring",ear2="Ethereal Earring",
+        body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Patricius Ring",
         back=gear.enmity_jse_back,waist="Carrier's Sash",legs="Malignance Tights",feet="Malignance Boots"}
         
     sets.Kiting = {legs=gear.carmine_legs_path_d}
@@ -567,83 +567,83 @@ function init_gear_sets()
     -- Normal melee group
 
     sets.engaged = {ammo="Ginsen",
-        head=gear.taeon_head_tp,neck="Anu Torque",left_ear="Eabani Earring",right_ear="Sherida Earring",
-        body="Malignance Tabard",hands="Malignance Gloves",left_ring="Chirich Ring +1",right_ring="Chirich Ring +1",
+        head=gear.taeon_head_tp,neck="Anu Torque",ear1="Eabani Earring",ear2="Sherida Earring",
+        body="Malignance Tabard",hands="Malignance Gloves",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
         back=gear.stp_jse_back,waist="Kentarch Belt +1",legs="Malignance Tights",feet="Malignance Boots"}
         
     -- MISSING: head Malignance Chapeau
-    -- MISSING: left_ear Cessance Earring
+    -- MISSING: ear1 Cessance Earring
     sets.engaged.Acc = {
-        neck="Anu Torque",right_ear="Sherida Earring",
-        body="Ayanmo Corazza +2",hands="Malignance Gloves",left_ring="Petrov Ring",right_ring="Ilabrat Ring",
+        neck="Anu Torque",ear2="Sherida Earring",
+        body="Ayanmo Corazza +2",hands="Malignance Gloves",ring1="Petrov Ring",ring2="Ilabrat Ring",
         back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Carmine Greaves +1"}
 
     -- MISSING: ammo Aurgelmir Orb +1
     -- MISSING: head Malignance Chapeau
-    -- MISSING: left_ear Cessance Earring
+    -- MISSING: ear1 Cessance Earring
     -- MISSING: back Moonlight Cape
     -- MISSING: feet Battlecast Gaiters
     sets.engaged.DT = {
-        neck="Loricate Torque +1",right_ear="Sherida Earring",
-        body="Malignance Tabard",hands="Nyame Gauntlets",left_ring="Defending Ring",right_ring="Patricius Ring",
+        neck="Loricate Torque +1",ear2="Sherida Earring",
+        body="Malignance Tabard",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Patricius Ring",
         waist="Windbuffet Belt +1",legs="Malignance Tights"}
         
     -- MISSING: ammo Aurgelmir Orb +1
     -- MISSING: head Malignance Chapeau
-    -- MISSING: left_ear Cessance Earring
+    -- MISSING: ear1 Cessance Earring
     -- MISSING: back Moonlight Cape
     -- MISSING: feet Battlecast Gaiters
     sets.engaged.Acc.DT = {
-        neck="Loricate Torque +1",right_ear="Sherida Earring",
-        body="Malignance Tabard",hands="Nyame Gauntlets",left_ring="Defending Ring",right_ring="Patricius Ring",
+        neck="Loricate Torque +1",ear2="Sherida Earring",
+        body="Malignance Tabard",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Patricius Ring",
         waist="Flume Belt +1",legs="Malignance Tights"}
         
     sets.engaged.DW = {ammo="Ginsen",
-        head=gear.taeon_head_tp,neck="Anu Torque",left_ear="Eabani Earring",right_ear="Sherida Earring",
-        body="Malignance Tabard",hands="Malignance Gloves",left_ring="Chirich Ring +1",right_ring="Chirich Ring +1",
+        head=gear.taeon_head_tp,neck="Anu Torque",ear1="Eabani Earring",ear2="Sherida Earring",
+        body="Malignance Tabard",hands="Malignance Gloves",ring1="Chirich Ring +1",ring2="Chirich Ring +1",
         back=gear.stp_jse_back,waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
         
     -- MISSING: ammo Aurgelmir Orb +1
     -- MISSING: head Malignance Chapeau
-    -- MISSING: left_ring Ramuh Ring +1
+    -- MISSING: ring1 Ramuh Ring +1
     -- MISSING: waist Olseni Belt
     sets.engaged.DW.Acc = {
-        neck="Combatant's Torque",left_ear="Eabani Earring",right_ear="Sherida Earring",
-        body="Malignance Tabard",hands="Malignance Gloves",right_ring="Ilabrat Ring",
+        neck="Combatant's Torque",ear1="Eabani Earring",ear2="Sherida Earring",
+        body="Malignance Tabard",hands="Malignance Gloves",ring2="Ilabrat Ring",
         back=gear.stp_jse_back,legs="Carmine Cuisses +1",feet="Malignance Boots"}
         
     -- MISSING: ammo Aurgelmir Orb +1
     -- MISSING: head Malignance Chapeau
     -- MISSING: back Moonlight Cape
     sets.engaged.DW.DT = {
-        neck="Loricate Torque +1",left_ear="Eabani Earring",right_ear="Sherida Earring",
-        body="Malignance Tabard",hands="Malignance Gloves",left_ring="Defending Ring",right_ring="Ilabrat Ring",
+        neck="Loricate Torque +1",ear1="Eabani Earring",ear2="Sherida Earring",
+        body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Ilabrat Ring",
         waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
         
     -- MISSING: ammo Aurgelmir Orb +1
     -- MISSING: head Malignance Chapeau
     -- MISSING: back Moonlight Cape
     sets.engaged.DW.Acc.DT = {
-        neck="Loricate Torque +1",left_ear="Eabani Earring",right_ear="Sherida Earring",
-        body="Malignance Tabard",hands="Malignance Gloves",left_ring="Defending Ring",right_ring="Ilabrat Ring",
+        neck="Loricate Torque +1",ear1="Eabani Earring",ear2="Sherida Earring",
+        body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Ilabrat Ring",
         waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
 
-    -- MISSING: right_ring Ramuh Ring +1
+    -- MISSING: ring2 Ramuh Ring +1
     sets.engaged.EnspellOnly = {
-        head="Aya. Zucchetto +2",neck="Dls. Torque +2",left_ear="Eabani Earring",right_ear="Digni. Earring",
-        body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",left_ring="Metamor. Ring +1",
+        head="Aya. Zucchetto +2",neck="Dls. Torque +2",ear1="Eabani Earring",ear2="Digni. Earring",
+        body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Metamor. Ring +1",
         back="Ghostfyre Cape",waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet="Carmine Greaves +1"}
         
-    -- MISSING: right_ring Ramuh Ring +1
+    -- MISSING: ring2 Ramuh Ring +1
     sets.engaged.EnspellOnly.Acc = {
-        head="Aya. Zucchetto +2",neck="Dls. Torque +2",left_ear="Eabani Earring",right_ear="Digni. Earring",
-        body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",left_ring="Metamor. Ring +1",
+        head="Aya. Zucchetto +2",neck="Dls. Torque +2",ear1="Eabani Earring",ear2="Digni. Earring",
+        body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Metamor. Ring +1",
         back="Ghostfyre Cape",waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet="Carmine Greaves +1"}        
 
-    -- MISSING: right_ring Ramuh Ring +1
+    -- MISSING: ring2 Ramuh Ring +1
     sets.engaged.DualEnspellOnly = {
-        head="Aya. Zucchetto +2",neck="Dls. Torque +2",left_ear="Eabani Earring",right_ear="Digni. Earring",
-        body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",left_ring="Metamor. Ring +1",
+        head="Aya. Zucchetto +2",neck="Dls. Torque +2",ear1="Eabani Earring",ear2="Digni. Earring",
+        body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Metamor. Ring +1",
         back="Ghostfyre Cape",waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet="Carmine Greaves +1"}
         
     sets.engaged.DualEnspellOnly.Acc = {ammo="Sroda Tathlum",

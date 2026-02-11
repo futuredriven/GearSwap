@@ -79,7 +79,6 @@ function init_gear_sets()
     --------------------------------------
 
     -- Weapons sets
-    -- Mapped from old file: sets.weapons.Naegling, Maxentius, EnspellDW → EnspellOnly, DualClubs → DualMaxentius
     sets.weapons.Naegling = {main="Naegling",sub="Sacro Bulwark",range=empty}
     sets.weapons.Crocea = {main="Maxentius",sub="Sacro Bulwark",range=empty}
     sets.weapons.Maxentius = {main="Maxentius",sub="Sacro Bulwark",range=empty}
@@ -97,7 +96,7 @@ function init_gear_sets()
     -- Precast Sets
     
     -- Precast sets to enhance JAs
-    sets.precast.JA['Chainspell'] = {body=gear.artifact_body}  -- Mapped from old file
+    sets.precast.JA['Chainspell'] = {body=gear.artifact_body}
     
     -- Steps (Pure Acc) - New in template, using old engaged gear
     sets.precast.Step = {ammo="Ginsen",
@@ -117,28 +116,28 @@ function init_gear_sets()
     -- Don't need any special gear for Healing Waltz.
     sets.precast.Waltz['Healing Waltz'] = {}
 
-    -- Fast cast sets for spells - Mapped from old sets.precast.FC
-    sets.precast.FC = {range=empty,ammo="Impatiens",
+    -- Fast cast sets for spells
+    sets.precast.FC = {range=empty,ammo="Sapience Orb",
         head=gear.relic_head,ear1="Loquac. Earring",ear2="Malignance Earring",
         body=gear.artifact_body,hands="Leyline Gloves",
         back="Perimede Cape",waist="Witful Belt",feet=gear.carmine_feet_path_d}
         
-    sets.precast.FC.DT = {range=empty,ammo="Impatiens",
+    sets.precast.FC.DT = {range=empty,ammo="Sapience Orb",
         head=gear.relic_head,ear1="Loquac. Earring",ear2="Malignance Earring",
         body=gear.artifact_body,hands="Leyline Gloves",
         back="Perimede Cape",waist="Witful Belt",feet=gear.carmine_feet_path_d}
 
-    sets.precast.FullFC = {range=empty,ammo="Impatiens",
+    sets.precast.FullFC = {range=empty,ammo="Sapience Orb",
         head=gear.relic_head,ear1="Loquac. Earring",ear2="Malignance Earring",
         body=gear.artifact_body,hands="Leyline Gloves",
         back="Perimede Cape",waist="Witful Belt",feet=gear.carmine_feet_path_d}
         
-    sets.precast.FC.Impact = set_combine(sets.precast.FC, {head=empty,body="Twilight Cloak"})  -- Mapped from old file
-    sets.precast.FC.Dispelga = set_combine(sets.precast.FC, {main="Daybreak",sub="Sacro Bulwark"})  -- Mapped from old file
+    sets.precast.FC.Impact = set_combine(sets.precast.FC, {head=empty,body="Twilight Cloak"})
+    sets.precast.FC.Dispelga = set_combine(sets.precast.FC, {main="Daybreak",sub="Sacro Bulwark"})
        
     -- Weaponskill sets
-    -- Default set for any weaponskill that isn't any more specifically defined - Mapped from old sets.precast.WS
-    sets.precast.WS = {range=empty,ammo="Crepuscular Pebble",
+    -- Default set for any weaponskill that isn't any more specifically defined
+    sets.precast.WS = {range=empty,ammo="Regal Gem",
         head="Nyame Helm",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
         body="Nyame Mail",hands="Malignance Gloves",ring1="Rufescent Ring",ring2="Karieyh Ring",
         back=gear.wsd_jse_back,waist="Fotia Belt",legs="Nyame Flanchard",feet=gear.empyrean_feet}
@@ -267,7 +266,7 @@ function init_gear_sets()
     sets.Self_Healing = {ear1="Etiolation Earring",hands="Buremte Gloves",ring2="Kunaji Ring",waist="Gishdubar Sash"}
     sets.Cure_Received = {hands="Buremte Gloves",ring2="Kunaji Ring",waist="Gishdubar Sash"}
     sets.Self_Refresh = {back="Grapevine Cape",waist="Gishdubar Sash"}
-    sets.Self_Phalanx = {main="Sakpata's Sword",neck="Incanter's Torque",ear2="Malignance Earring"}  -- Mapped from old sets.midcast.Phalanx
+    sets.Self_Phalanx = {main="Sakpata's Sword",neck="Incanter's Torque",ear2="Malignance Earring"}
     sets.Self_Phalanx.DW = {main="Sakpata's Sword",sub="Pukulatmuj"}  -- Using old Temper.DW sub as reference
     
     sets.midcast['Enfeebling Magic'] = {main="Maxentius",sub="Ammurapi Shield",range=empty,ammo="Regal Gem",

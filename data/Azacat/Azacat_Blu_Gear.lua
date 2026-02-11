@@ -108,13 +108,11 @@ function init_gear_sets()
 
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
-    -- NOTE: duplicate ring detected; normalization skipped for this set
     sets.precast.WS = {ammo="Crepuscular Pebble",
         head="Nyame Helm",neck="Fotia Gorget",ear1="Moonshade Earring",ear2="Ishvara Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Ifrit Ring +1",ring2="Ifrit Ring +1",
         back=gear.wsd_jse_back,waist="Fotia Belt",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
-    -- NOTE: duplicate ring detected; normalization skipped for this set
     sets.precast.WS.Acc = {ammo="Hasty Pinion +1",
         head="Nyame Helm",neck="Fotia Gorget",ear1="Regal Earring",ear2="Telos Earring",
         body="Nyame Mail",hands="Nyame Gauntlets",ring1="Ifrit Ring +1",ring2="Ifrit Ring +1",

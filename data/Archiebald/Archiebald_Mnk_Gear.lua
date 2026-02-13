@@ -15,14 +15,17 @@ function user_job_setup()
 	-- Reforged Gear
 	gear.artifact_body = "Anch. Cyclas +2"
 	gear.artifact_feet = "Anch. Gaiters +3"
+	
 	gear.relic_head = "Hes. Crown"
 	gear.relic_body = "Hes. Cyclas"
 	gear.relic_hands = "Hes. Gloves +3"
 	gear.relic_legs = "Hes. Hose +3"
 	gear.relic_feet = "Hes. Gaiters +3"
+	
 	gear.empyrean_head = "Bhikku Crown +2"
 	gear.empyrean_body = "Bhikku Cyclas +2"
 	gear.empyrean_legs = "Bhikku Hose +2"
+
 	gear.tp_jse_back = { name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Magic dmg. taken-10%',}}
 	gear.fc_jse_back = { name="Segomo's Mantle", augments={'HP+60','HP+20','"Fast Cast"+10',}}
 	gear.ws_jse_back = { name="Segomo's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Crit.hit rate+10','Damage taken-5%',}}

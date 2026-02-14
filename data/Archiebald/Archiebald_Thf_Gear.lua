@@ -18,7 +18,7 @@ function user_job_setup()
     state.PhysicalDefenseMode:options('PDT')
     state.MagicalDefenseMode:options('MDT')
     state.ResistDefenseMode:options('MEVA')
-    state.Weapons:options('Savage','Aeneas','Aeolian','ProcWeapons','Evisceration','Throwing','SwordThrowing','Bow')
+    state.Weapons:options('Dagger')
 
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','Suppa','DWMax','Parry'}
     state.AmbushMode = M(false, 'Ambush Mode')
@@ -65,12 +65,13 @@ function init_gear_sets()
     sets.Ambush = {}
     
 	-- Weapons sets
-	sets.weapons.Aeneas = {main="Aeneas",sub="Gleti's Knife"}
+    sets.weapons.Dagger = {main="Taming Sari",sub="Gleti's Knife"}	
+    --sets.weapons.Aeneas = {main="Aeneas",sub="Gleti's Knife"}
 	--sets.weapons.Aeolian = {main="Malevolence",sub="Malevolence"}
 	--sets.weapons.Savage = {main="Naegling",sub="Gleti's Knife"}
 	--sets.weapons.ProcWeapons = {main="Blurred Knife +1",sub="Atoyac"}
 	--sets.weapons.Evisceration = {main="Tauret",sub="Gleti's Knife"}
-	sets.weapons.Throwing = {main="Aeneas",sub="Gleti's Knife",range="Raider's Bmrng.",ammo=empty}
+	--sets.weapons.Throwing = {main="Aeneas",sub="Gleti's Knife",range="Raider's Bmrng.",ammo=empty}
 	--sets.weapons.SwordThrowing = {main="Naegling",sub="Gleti's Knife",range="Raider's Bmrng.",ammo=empty}
 	--sets.weapons.Bow = {main="Aeneas",sub="Kustawi +1",range="Kaja Bow",ammo="Chapuli Arrow"}
 

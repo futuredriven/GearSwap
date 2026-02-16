@@ -8,7 +8,7 @@ function user_job_setup()
     state.PhysicalDefenseMode:options('PDT')
     state.MagicalDefenseMode:options('MDT')
     state.ResistDefenseMode:options('MEVA')
-    state.Weapons:options('Tizbron','Tizalmace','None','Almace','MeleeClubs','HybridWeapons','Naegbron','Naegmace')
+    state.Weapons:options('Tizbron','MeleeClubs','Naegbron','Learn')
 
     state.ExtraMeleeMode = M{['description']='Extra Melee Mode','None','MP','SuppaBrutal','DWEarrings','DWMax'}
 
@@ -514,11 +514,11 @@ function init_gear_sets()
     sets.TreasureHunter = set_combine(sets.TreasureHunter, {})
     
     -- Weapons sets
-    sets.weapons.Tizona = {main="Tizona",sub="Thibron"}    
+    sets.weapons.Tizbron = {main="Tizona",sub="Thibron"}    
     sets.weapons.MeleeClubs = {main="Maxentius",sub="Thibron"}
     sets.weapons.Naegbron = {main="Naegling",sub="Thibron"}
     -- MISSING: sub Iris
-    sets.weapons.MaccWeapons = {main="Iris"}
+    -- sets.weapons.MaccWeapons = {main="Iris"}
     sets.weapons.Learn = {main="Extinction",sub="Feline Hagoita"}
 
     -- Engaged sets
